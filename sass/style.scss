@@ -1,7 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    color: white;
-    // background: #0a0809;
+    color: white; // background: #0a0809;
     background: black;
 }
 
@@ -22,14 +21,15 @@ body {
     }
     .menu-list {
         padding-top: 20px;
+        padding-bottom: 20px;
         color: #4c4c4c;
- 
-    &:hover{
-        color: white;
-    
+        cursor: pointer;
+        &:hover {
+            cursor: pointer;
+            color: white;
+            border-bottom: 2px solid white;
+        }
     }
-    }
-   
     .menu-logo-img img {
         width: 120px;
     }
@@ -67,6 +67,11 @@ body {
             width: 250px;
             margin: 0 20px;
         }
+        .pre-register-btn img {
+            &:hover {
+                cursor: pointer;
+            }
+        }
         .google-btn {
             padding-top: 8px;
         }
@@ -75,7 +80,8 @@ body {
         text-align: center;
         margin-top: 10px;
         img {
-            width: 20px;
+            width: 50px;
+            animation: wiggle 1.5s infinite;
         }
     }
 }
@@ -238,5 +244,21 @@ footer {
     .nj-logo {
         width: 100px;
         padding-left: 20px;
+    }
+}
+
+// Key frames for animation
+
+@keyframes wiggle {
+    0% {
+        -webkit-transform: translate(0, 5px)
+    }
+
+    65% {
+        -webkit-transform: translate(0, -5px)
+    }
+
+    100% {
+        -webkit-transform: translate(0, 5px)
     }
 }
