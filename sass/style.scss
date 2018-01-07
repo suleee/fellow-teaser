@@ -133,13 +133,31 @@ body {
     }
 }
 
+.pre-section3 {
+    background-position: 65% 0%;
+    background-size: cover;
+    &.idx-mage {
+        // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-mage.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
+        background-image: url("../img/bg-mage.jpg");
+        transition: background-image 300ms ease-in 200ms;
+    }
+    &.idx-warrior {
+        transition: background-image 300ms ease-in 200ms;
+        background-image: url("../img/bg-register.jpg");
+    }
+    &.idx-rogue {
+    }
+    &.idx-ranger {
+    }
+}
 .section3 {
+    position: relative;
     margin-top: 550px;
     padding-top: 140px;
     height: 120vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-class.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
-    background-position: 65% 0%;
-    background-size: cover;
+    // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-mage.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
+    // background-position: 65% 0%;
+    // background-size: cover;
     @media all and (min-width: 500px) {
         padding-top: 200px;
         max-width: 1000px;
@@ -152,7 +170,27 @@ body {
         list-style: none;
         display: flex;
     }
-    .class-content {
+    .character-mage {
+        // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-mage.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
+    }
+    .arrow-left, .arrow-right {
+        position: absolute;
+        height: 50vh;
+        width: 15vw;
+        opacity: 0.1;
+        z-index: 10000;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+        img {
+            padding-top: 40vh;
+        }
+    }
+    .arrow-right {
+        right: 0;
+    }
+    .desc {
         width: 400px;
         margin-top: 200px;
         @media all and (min-width: 500px) {
@@ -163,6 +201,36 @@ body {
         padding-left: 0;
         li {
             margin-right: 20px;
+            height: 52px;
+            width: 52px;
+            &.mage {
+                background-image: url("../img/icon-mage.png");
+                &:hover {
+                    background-position: -56px 0;
+                    cursor: pointer;
+                }
+            }
+            &.warrior {
+                background-image: url("../img/icon-warrior.png");
+                &:hover {
+                    background-position: -57px 0;
+                    cursor: pointer;
+                }
+            }
+            &.rogue {
+                background-image: url("../img/icon-rogue.png");
+                &:hover {
+                    background-position: -57px 0;
+                    cursor: pointer;
+                }                
+            }
+            &.ranger {
+                background-image: url("../img/icon-ranger.png");
+                &:hover {
+                    background-position: -57px 0;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }

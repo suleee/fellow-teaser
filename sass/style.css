@@ -105,13 +105,21 @@ body {
       .section2 .section2-content-in:nth-child(2) {
         margin-top: 0px; } }
 
-.section3 {
-  margin-top: 550px;
-  padding-top: 140px;
-  height: 120vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-class.jpg") no-repeat center top;
+.pre-section3 {
   background-position: 65% 0%;
   background-size: cover; }
+  .pre-section3.idx-mage {
+    background-image: url("../img/bg-mage.jpg");
+    transition: background-image 300ms ease-in 200ms; }
+  .pre-section3.idx-warrior {
+    transition: background-image 300ms ease-in 200ms;
+    background-image: url("../img/bg-register.jpg"); }
+
+.section3 {
+  position: relative;
+  margin-top: 550px;
+  padding-top: 140px;
+  height: 120vh; }
   @media all and (min-width: 500px) {
     .section3 {
       padding-top: 200px;
@@ -123,16 +131,51 @@ body {
   .section3 ul {
     list-style: none;
     display: flex; }
-  .section3 .class-content {
+  .section3 .arrow-left, .section3 .arrow-right {
+    position: absolute;
+    height: 50vh;
+    width: 15vw;
+    opacity: 0.1;
+    z-index: 10000;
+    cursor: pointer; }
+    .section3 .arrow-left:hover, .section3 .arrow-right:hover {
+      opacity: 1; }
+    .section3 .arrow-left img, .section3 .arrow-right img {
+      padding-top: 40vh; }
+  .section3 .arrow-right {
+    right: 0; }
+  .section3 .desc {
     width: 400px;
     margin-top: 200px; }
     @media all and (min-width: 500px) {
-      .section3 .class-content {
+      .section3 .desc {
         margin-top: 124px; } }
   .section3 .icon-list {
     padding-left: 0; }
     .section3 .icon-list li {
-      margin-right: 20px; }
+      margin-right: 20px;
+      height: 52px;
+      width: 52px; }
+      .section3 .icon-list li.mage {
+        background-image: url("../img/icon-mage.png"); }
+        .section3 .icon-list li.mage:hover {
+          background-position: -56px 0;
+          cursor: pointer; }
+      .section3 .icon-list li.warrior {
+        background-image: url("../img/icon-warrior.png"); }
+        .section3 .icon-list li.warrior:hover {
+          background-position: -57px 0;
+          cursor: pointer; }
+      .section3 .icon-list li.rogue {
+        background-image: url("../img/icon-rogue.png"); }
+        .section3 .icon-list li.rogue:hover {
+          background-position: -57px 0;
+          cursor: pointer; }
+      .section3 .icon-list li.ranger {
+        background-image: url("../img/icon-ranger.png"); }
+        .section3 .icon-list li.ranger:hover {
+          background-position: -57px 0;
+          cursor: pointer; }
 
 .section4,
 .media {
