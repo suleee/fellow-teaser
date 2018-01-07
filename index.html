@@ -250,25 +250,57 @@
             <div class="media-menu">
                 <h2>Media</h2>
                 <ul class="media-tab">
-                    <li> All
+                    <li> <a class="active" data-section-selector="all">All</a>
                         <span>|</span>
                     </li>
-                    <li>Videos
+                    <li><a data-section-selector="videos">Videos </a>
                         <span>|</span>
                     </li>
-                    <li> Screenshots
+                    <li> <a data-section-selector="screenshots">Screenshots</a>
                         <span>|</span>
                     </li>
-                    <li> Artworks</li>
+                    <li> <a data-section-selector="artworks">Artworks</a></li>
                 </ul>
             </div>
-            <div class="media-thumb-container">
+            <div class="media-thumb-container" data-section="all">
+                all
                 <div class="media-thumb-container-1row">
                     <div class="media-thumb"></div>
                     <div class="media-thumb"></div>
                     <div class="media-thumb"></div>
                 </div>
                 <div class="media-thumb-container-2row">
+                    <div class="media-thumb"></div>
+                    <div class="media-thumb"></div>
+                    <div class="media-thumb"></div>
+                </div>
+            </div>
+            <div class="media-thumb-container hide" data-section="videos">
+                videos
+                <div class="media-thumb-container-1row">
+                    <div class="media-thumb"></div>
+                    <div class="media-thumb"></div>
+                    <div class="media-thumb"></div>
+                </div>
+                <div class="media-thumb-container-2row">
+                    <div class="media-thumb"></div>
+                    <div class="media-thumb"></div>
+                </div>
+            </div>
+            <div class="media-thumb-container hide" data-section="screenshots">
+                    screenshots
+                <div class="media-thumb-container-1row">
+                    <div class="media-thumb"></div>
+                    <div class="media-thumb"></div>
+                    <div class="media-thumb"></div>
+                </div>
+                <div class="media-thumb-container-2row">
+                    <div class="media-thumb"></div>
+                </div>
+            </div>
+            <div class="media-thumb-container hide" data-section="artworks">
+                    artworks
+                <div class="media-thumb-container-1row">
                     <div class="media-thumb"></div>
                     <div class="media-thumb"></div>
                     <div class="media-thumb"></div>

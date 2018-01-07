@@ -237,7 +237,7 @@ body {
 
 .section4,
 .media {
-    height: 100vh;
+    // height: 100vh; // I guess this is not needed?
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-media.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
     background-size: cover;
     .media-menu {
@@ -271,8 +271,10 @@ body {
     }
     .media-thumb-container-2row {
         visibility: hidden;
+        height: 0;
         @media all and (min-width: 500px) {
             visibility: visible;
+            height: 300px;
         }
     }
     .media-thumb-container-1row,
@@ -289,6 +291,13 @@ body {
     .media-thumb:nth-child(2) {
         margin: 0 10px;
     }
+    .hide {
+        display: none;
+    }
+    .media-tab li a.active {
+        color: white;
+    }
+
 }
 
 footer {

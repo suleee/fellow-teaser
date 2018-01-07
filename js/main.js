@@ -60,6 +60,20 @@ $(function () {
       var index = $('.section3 .slick-slide[data-name="' + name + '"]').attr('data-slick-index');
       $sliderSel.slick('slickGoTo', index, false);
     });
+
+    var $mediaSel = $('.media');
+    var $allContainers = $('.media-thumb-container', $mediaSel);
+    var $allLinks = $('.media-tab li a', $mediaSel);
+    $('li a', $mediaSel).on('click', function(){
+      var $this = $(this);
+      var selectedName = $this.attr('data-section-selector');
+      var $activeSection = $('.media-thumb-container[data-section="' + selectedName + '"]', $mediaSel);
+      $allLinks.removeClass('active');
+      $this.addClass('active');
+      $allContainers.addClass('hide');
+      $activeSection.removeClass('hide');
+      
+    });
   });
 
   // items
