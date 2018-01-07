@@ -23,6 +23,11 @@ $(function () {
     }, 1000);
   });
 
+  $('.pre-register-btn img').hover(function(){
+    $(this).attr('src', $(this).attr('data-hover'));
+  }, function(){
+    $(this).attr('src', $(this).attr('data-main'));
+  });
 
 
   // items

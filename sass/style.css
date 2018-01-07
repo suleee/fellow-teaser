@@ -19,9 +19,13 @@ body {
     padding-left: 0; }
   .desktop-menu .menu-list {
     padding-top: 20px;
-    color: #4c4c4c; }
+    padding-bottom: 20px;
+    color: #4c4c4c;
+    cursor: pointer; }
     .desktop-menu .menu-list:hover {
-      color: white; }
+      cursor: pointer;
+      color: white;
+      border-bottom: 2px solid white; }
   .desktop-menu .menu-logo-img img {
     width: 120px; }
   .desktop-menu .menu-sns {
@@ -53,13 +57,16 @@ body {
     .section1 .top-banner-btn .google-btn img {
       width: 250px;
       margin: 0 20px; }
+    .section1 .top-banner-btn .pre-register-btn img:hover {
+      cursor: pointer; }
     .section1 .top-banner-btn .google-btn {
       padding-top: 8px; }
   .section1 .mouse-ani {
     text-align: center;
     margin-top: 10px; }
     .section1 .mouse-ani img {
-      width: 20px; }
+      width: 50px;
+      animation: wiggle 1.5s infinite; }
 
 .pre-registration {
   display: none;
@@ -203,5 +210,13 @@ footer {
   footer .nj-logo {
     width: 100px;
     padding-left: 20px; }
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(0, 5px); }
+  65% {
+    -webkit-transform: translate(0, -5px); }
+  100% {
+    -webkit-transform: translate(0, 5px); } }
 
 /*# sourceMappingURL=style.css.map */
