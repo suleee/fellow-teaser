@@ -87,4 +87,61 @@ $(function () {
   // });
 
 
+
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+  if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+      $('#return-to-top').fadeIn(200);    // Fade in the arrow
+  } else {
+      $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+  }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+  $('body,html').animate({
+      scrollTop : 0                       // Scroll to top of body
+  }, 500);
+});
+
+
+
+
+});
+
+
+
+
+
+
+function popupOpenClose(popup) {
+	
+	/* Add div inside popup for layout if one doesn't exist */
+	if ($(".wrapper").length == 0){
+		$(popup).wrapInner("<div class='wrapper'></div>");
+	}
+	
+	/* Open popup */
+	$(popup).show();
+
+	/* Close popup if user clicks on background */
+	$(popup).click(function(e) {
+		if ( e.target == this ) {
+			if ($(popup).is(':visible')) {
+				$(popup).hide();
+			}
+		}
+	});
+
+	/* Close popup and remove errors if user clicks on cancel or close buttons */
+	$(popup).find("button[name=close]").on("click", function() {
+		if ($(".formElementError").is(':visible')) {
+			$(".formElementError").remove();
+		}
+		$(popup).hide();
+	});
+}
+
+$(document).ready(function () {
+	$("[data-js=open]").on("click", function() {
+		popupOpenClose($(".popup"));
+	});
 });

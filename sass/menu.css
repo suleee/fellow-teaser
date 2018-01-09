@@ -15,17 +15,17 @@ a
   transition: color 0.3s ease;
 }
 
-a:hover
+/* a:hover
 {
   color: tomato;
-}
+} */
 
 #menuToggle
 {
   display: block;
   position: relative;
-  top: 50px;
-  left: 50px;
+  top: 30px;
+  left: 25px;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -166,6 +166,7 @@ a:hover
 .ham-menu{
   position: fixed;
   z-index: 1;
+
 }
 
 @media all and (min-width: 500px) {
@@ -176,3 +177,6 @@ a:hover
   visibility: visible;
 }
 }
+
+
+

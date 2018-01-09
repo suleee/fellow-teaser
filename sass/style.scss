@@ -1,7 +1,16 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Helvetica','Roboto', sans-serif;
     color: white; // background: #0a0809;
     background: black;
+    font-size: 14px;
+}
+
+a {
+    color: #4c4c4c;
+    font-weight: 500;
+    &:hover {
+        color: white;
+    }
 }
 
 .desktop-menu {
@@ -11,49 +20,61 @@ body {
     background-color: black;
     ul {
         list-style: none;
-        display: flex;
-        max-width: 1100px;
+        display: flex; // max-width: 1100px;
         margin: 0 auto;
         justify-content: space-around;
         height: 66px;
-        padding-top: 12px;
         padding-left: 0;
+        li {
+            padding-top: 10px;
+        }
     }
     .menu-list {
-        padding-top: 20px;
+        padding-top: 25px;
         padding-bottom: 20px;
-        color: #4c4c4c;
         cursor: pointer;
+        text-transform: uppercase;
         &:hover {
             cursor: pointer;
             color: white;
             border-bottom: 2px solid white;
+        }
+        a:hover {
+            color: white;
         }
     }
     .menu-logo-img img {
         width: 120px;
     }
     .menu-sns {
-        display: flex;
-        padding-top: 0px;
-        padding-top: 10px;
+        display: flex; // padding-top: 0px;
+        padding-top: 20px;
     }
 }
 
 .section1 {
     padding-top: 78px;
-    margin: 0 auto;
-    max-width: 1100px;
     height: 100vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%), url("../img/main-banner.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
     background-size: cover;
     .logo {
         text-align: center;
         img {
-            width: 300PX;
+            width: 250PX;
             margin-top: 30px;
+            @media all and (min-width: 500px) {
+                width: 350PX;
+            }
         }
     }
+    .section1-content {
+        margin: 0 auto;
+        max-width: 1100px;
+    } // .top-banner-btn,
+    // .logo {
+    //     animation-duration: 2s;
+    //     animation-name: slidedown;
+    // }
     .top-banner-btn {
         text-align: center;
         padding-top: 300px;
@@ -99,35 +120,71 @@ body {
     height: 100vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
     background-size: cover;
-    .title {}
-    h2 {
+    // @media all and (min-width: 700px) {
+    //     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center -8.5rem;
+    // }
+    .title {
+        margin-top: 63px;
+        font-family: 'Cormorant', serif;
+        font-weight: 300;
         padding-top: 40px;
         text-align: center;
-        font-weight: 400;
+        @media all and (min-width: 400px) {
+            padding-top: 50px;
+            font-weight: 100;
+            margin-top: 50px;
+        }
+        p {
+            margin: 0;
+            color: #C2AA3C;
+            font-size: 24px;
+        }
+        P:nth-child(2) {
+            margin-top: 5px;
+        }
         span {
-            font-weight: 600;
-            color: orange;
+            color: white;
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            @media all and (min-width: 500px) {
+                font-size: 35px;
+            }
         }
     }
     .section2-content {
-        min-width: 300px;
-        margin-top: 500px;
-        @media all and (min-width: 500px) {
+        min-width: 280px;
+        padding-top: 324px;
+        @media all and (min-width: 400px) {
+            padding-top: 454px;
+        }
+        @media all and (min-width: 800px) {
             max-width: 1000px;
-            padding-top: 120px;
+            padding-top: 90px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
         }
+        h3 {
+            font-weight: 300;
+            margin: 0;
+            font-size: 28px;
+            font-family: 'Cormorant', serif;
+        }
+        p {
+            @media all and (min-width: 500px) {
+                font-size: 15px;
+            }
+        }
     }
     .section2-content-in {
-        @media all and (min-width: 500px) {
+        @media all and (min-width: 800px) {
             width: 30%;
         }
     }
     .section2-content-in:nth-child(2) {
         margin-top: 60px;
-        @media all and (min-width: 500px) {
+        @media all and (min-width: 800px) {
             margin-top: 0px;
         }
     }
@@ -143,28 +200,40 @@ body {
     }
     &.idx-warrior {
         transition: background-image 300ms ease-in 200ms;
-        background-image: url("../img/bg-register.jpg");
+        background-image: url("../img/bg-warrior.jpg");
     }
     &.idx-rogue {
+        transition: background-image 300ms ease-in 200ms;
+        background-image: url("../img/bg-rouge.jpg");
     }
     &.idx-ranger {
+        transition: background-image 300ms ease-in 200ms;
+        background-image: url("../img/bg-ranger.jpg");
     }
 }
+
+.pre-section3 {
+    margin-bottom: 200px;
+    @media all and (min-width: 400px) {
+        margin-bottom: 46px;
+    }
+}
+
 .section3 {
     position: relative;
-    margin-top: 550px;
-    padding-top: 140px;
-    height: 120vh;
-    // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-mage.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
-    // background-position: 65% 0%;
-    // background-size: cover;
+    margin-top: 450px;
+    padding-top: 30px;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .9) 70%);
     @media all and (min-width: 500px) {
-        padding-top: 200px;
+        padding-bottom: 112px;
+        padding-top: 100px;
         max-width: 1000px;
         margin: 0 auto;
     }
-    @media all and (min-width: 800px) {
-        padding-top: 00px;
+    @media all and (min-width: 600px) {
+        padding-top: 90px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%);
     }
     ul {
         list-style: none;
@@ -173,7 +242,8 @@ body {
     .character-mage {
         // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-mage.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
     }
-    .arrow-left, .arrow-right {
+    .arrow-left,
+    .arrow-right {
         position: absolute;
         height: 50vh;
         width: 15vw;
@@ -188,46 +258,58 @@ body {
         }
     }
     .arrow-right {
-        right: 0;
+        left: 80%;
+        @media all and (min-width: 500px) {
+            left: 90%;
+        }
+        @media all and (min-width: 1100px) {
+            left: 100%;
+        }
     }
     .desc {
-        width: 400px;
-        margin-top: 200px;
-        @media all and (min-width: 500px) {
-            margin-top: 124px;
+        padding: 0 10px;
+        margin-top: 150px;
+        @media all and (min-width: 600px) {
+            margin-left: 0px;
+            width: 400px;
+            margin-top: 70px;
+        }
+        @media all and (min-width: 800px) {
+            margin-top: 55px;
         }
     }
     .icon-list {
         padding-left: 0;
         li {
             margin-right: 20px;
-            height: 52px;
-            width: 52px;
+            height: 41px;
+            width: 41px;
+            background-size: cover;
             &.mage {
                 background-image: url("../img/icon-mage.png");
                 &:hover {
-                    background-position: -56px 0;
+                    background-position: -44px 0;
                     cursor: pointer;
                 }
             }
             &.warrior {
                 background-image: url("../img/icon-warrior.png");
                 &:hover {
-                    background-position: -57px 0;
+                    background-position: -44px 0;
                     cursor: pointer;
                 }
             }
             &.rogue {
                 background-image: url("../img/icon-rogue.png");
                 &:hover {
-                    background-position: -57px 0;
+                    background-position: -44px 0;
                     cursor: pointer;
-                }                
+                }
             }
             &.ranger {
                 background-image: url("../img/icon-ranger.png");
                 &:hover {
-                    background-position: -57px 0;
+                    background-position: -44px 0;
                     cursor: pointer;
                 }
             }
@@ -235,11 +317,66 @@ body {
     }
 }
 
+.media-menu h2,
+.classes h2 {
+    padding-left: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: 'Cormorant', serif;
+    letter-spacing: 4px;
+    font-size: 18px; // color: #C2AA3C;
+    // text    // @media all and (min-width: 800px) {
+    //     text-align:left;
+    // }-align: center;
+}
+
+.classes {
+    h2 {
+        padding-top: 0px;
+        @media all and (min-width: 800px) {
+            padding-top: 56px;
+        }
+    }
+    h3 {
+        font-size: 50px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        font-style: italic;
+        font-family: 'Cormorant', serif;
+        @media all and (min-width: 500px) {
+            font-size: 60px;
+        }
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 300;
+        margin: 0 0 25px 0;
+        font-family: 'Cormorant', serif;
+    }
+    p {
+        font-size: 14px;
+        line-height: 20px;
+        @media all and (min-width: 500px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+.section2-left h3 {
+    color: #ee1c00;
+}
+
+.section2-right h3 {
+    color: #00a8ff;
+}
+
 .section4,
 .media {
     // height: 100vh; // I guess this is not needed?
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-media.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
     background-size: cover;
+    padding-top: 46px;
     .media-menu {
         @media all and (min-width: 500px) {
             display: flex;
@@ -251,9 +388,11 @@ body {
     .media-tab {
         list-style: none;
         display: flex;
-        padding-left: 0;
+        flex-wrap: wrap;
+        font-size: 14px;
+        padding: 0 10px;
         @media all and (min-width: 500px) {
-            padding-top: 20px;
+            padding-top: 10px;
         }
         li {
             font-size: 14px;
@@ -283,6 +422,11 @@ body {
         justify-content: center;
         padding: 20px 0;
     }
+    .media-thumb img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
     .media-thumb {
         background-color: white;
         width: 350px;
@@ -297,18 +441,18 @@ body {
     .media-tab li a.active {
         color: white;
     }
-
 }
 
 footer {
     background-color: white;
     color: #949494;
-    height: 80px;
+    height: 30vh;
     text-align: center;
     justify-content: center;
     padding-top: 50px;
     @media all and (min-width: 800px) {
         display: flex;
+        height: 20vh;
     }
     p {
         font-size: 14px;
@@ -322,20 +466,26 @@ footer {
         width: 100px;
         padding-left: 20px;
     }
-}
-
-// Key frames for animation
-
+} // Key frames for animation
 @keyframes wiggle {
     0% {
         -webkit-transform: translate(0, 5px)
     }
-
     65% {
         -webkit-transform: translate(0, -5px)
     }
-
     100% {
         -webkit-transform: translate(0, 5px)
+    }
+}
+
+@keyframes slidedown {
+    from {
+        margin-top: -50%;
+        width: 300%;
+    }
+    to {
+        margin-bottom: 0%;
+        width: 100%;
     }
 }
