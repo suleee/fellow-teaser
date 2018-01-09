@@ -39,6 +39,10 @@ a {
   .desktop-menu .menu-sns {
     display: flex;
     padding-top: 20px; }
+    .desktop-menu .menu-sns a {
+      padding-right: 10px; }
+    .desktop-menu .menu-sns a:nth-child(5) {
+      padding-right: 0px; }
 
 .section1 {
   padding-top: 78px;

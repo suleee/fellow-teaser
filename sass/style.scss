@@ -49,6 +49,13 @@ a {
     .menu-sns {
         display: flex; // padding-top: 0px;
         padding-top: 20px;
+        a{
+            padding-right: 10px;
+        }
+        a:nth-child(5){
+            padding-right: 0px;
+        }
+
     }
 }
 
