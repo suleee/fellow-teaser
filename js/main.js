@@ -59,6 +59,8 @@ $(function () {
       var name = $(this).attr('class');
       var index = $('.section3 .slick-slide[data-name="' + name + '"]').attr('data-slick-index');
       $sliderSel.slick('slickGoTo', index, false);
+      $iconsList.find('li').removeClass('active');
+      $iconsList.find('.' + name).addClass('active');
     });
 
     var $mediaSel = $('.media');
