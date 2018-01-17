@@ -148,8 +148,7 @@ a
 .desktop-menu{
   visibility: hidden;
 }
-
-.menu-sns{
+.ham-menu .menu-sns{
   display: flex;
   padding-top: 50px;
 }

@@ -13,6 +13,55 @@ a {
     }
 }
 
+.menu-sns {
+    display: flex; // padding-top: 0px;
+    padding-top: 20px;
+    a {
+        padding-right: 10px;
+        .icon {
+            display: inline-block;
+            padding-right: 0;
+            width: 30px;
+            height: 30px;
+        }
+        .icon-facebook {
+            background: url("../img/facebook.png") no-repeat;
+            background-size: cover;
+            &:hover {
+                background-position: -30px 0;
+            }
+        }
+        .icon-twitter {
+            background: url("../img/twitter.png") no-repeat;
+            background-size: cover;
+            &:hover {
+                background-position: -30px 0;
+            }
+        }
+        .icon-instagram {
+            background: url("../img/instagram.png") no-repeat;
+            background-size: cover;
+            &:hover {
+                background-position: -30px 0;
+            }
+        }
+        .icon-youtube {
+            background: url("../img/youtube.png") no-repeat;
+            background-size: cover;
+            &:hover {
+                background-position: -30px 0;
+            }
+        }
+        .icon-discord {
+            background: url("../img/discord.png") no-repeat;
+            background-size: cover;
+            &:hover {
+                background-position: -30px 0;
+            }
+        }
+    }
+}
+
 .desktop-menu {
     position: fixed;
     z-index: 1;
@@ -26,7 +75,7 @@ a {
         justify-content: space-around;
         height: 66px;
         padding-left: 0;
-        li {
+        .menu-logo-img {
             padding-top: 10px;
         }
     }
@@ -47,38 +96,71 @@ a {
     .menu-logo-img img {
         width: 120px;
     }
-    .menu-sns {
-        display: flex; // padding-top: 0px;
-        padding-top: 20px;
-        a {
-            padding-right: 10px;
-        }
-        a:nth-child(5) {
-            padding-right: 0px;
-        }
-        a:hover {
-            filter: grayscale(100%);
-        }
+}
+
+.main-vid {
+    visibility: hidden;
+    height: 756px;
+    @media all and (min-width:700px) {
+        position: relative;
+        visibility: visible;
+        width: 160%;
+        height: 100%;
+        left:-25%;
+    }
+    @media all and (min-width:750px) {
+        width: 150%;
+        height: 100%;
+        left:-25%;
+    }
+    @media all and (min-width:800px) {
+        width: 140%;
+        height: 100%;
+        left:-25%;
+    }
+    @media all and (min-width: 900px) {
+        width: 130%;
+        height: 120%;
+        left: 0;
+    }
+    @media all and (min-width: 1000px) {
+        width: 1400px;
+        height: 120%;
+        left: 0;
     }
 }
 
 .section1 {
-    padding-top: 78px;
-    height: 100vh;
+    // padding-top: 100px;
+    // height: 100vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%), url("../img/main-banner.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
     background-size: cover;
+    margin-top: 78px;
+    position: absolute;
+    top: 0;
     @media all and (min-width: 700px) {
         background-size: 145%;
-        height: 85vh;
+        background: none;
+        margin-top: 0px; // height: 85vh;
     }
     @media all and (min-width: 900px) {
-        background-size: cover;
-        height: 100vh;
+        background-size: cover; // height: 100vh;
     }
+    width: 100%; // height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .top-play-btn {
         text-align: center;
         img {
             padding-top: 50px;
+            -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+            -webkit-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            &:hover {
+                -webkit-filter: drop-shadow(0px 0px 8px rgba(209, 225, 226, 0.9));
+            }
         }
     }
     .logo {
@@ -135,9 +217,16 @@ a {
 }
 
 .pre-register-container {
-    height: 100vh;
+    margin-bottom: 25px;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-register.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
     background-size: cover;
+    font-family: 'Cormorant', serif;
+    @media all and (min-width: 700px) {
+        margin-bottom: 55px; // height: 100vh;
+    }
+    .sub-text {
+        font-size: 18px;
+    }
     .pre-regiter-header {
         max-width: 900px;
         margin: 0 auto;
@@ -145,39 +234,58 @@ a {
         padding: 50px 0;
         text-shadow: 2px 2px 5px darkslategrey;
         h2 {
-            font-size: 50px;
+            font-size: 35px;
             font-weight: 300;
             margin: 0;
+            @media all and (min-width: 700px) {
+                font-size: 50px;
+            }
         }
         p {
-            font-size: 24px;
+            font-size: 18px;
             margin: 0;
-        }
-    }
-    .container,
-    .prize-image,
-    .prize-image,
-    .prize-text,
-    .bonus-text {
-        display: flex;
-    }
-    .prize-image {
-        padding-left: 4%;
-        img {
-            width: 150px;
-            height: 150px;
+            @media all and (min-width: 700px) {
+                font-size: 24px;
+            }
         }
     }
     .container {
         max-width: 1000px;
         margin: 0 auto;
         box-shadow: 1px 4px 11px 2px rgba(0, 0, 0, .2);
+        @media all and (min-width: 700px) {
+            display: flex;
+        }
+    }
+    .prize-image,
+    .prize-text,
+    .bonus-text {
+        display: flex;
+    }
+    .pre-register-btn02 {
+        width: 260px;
+        height: 66px;
+        margin: 0 auto;
+        background: url('../img/pre-regi-btn-default.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        &:hover {
+            cursor: pointer;
+            background: url('../img/pre-regi-btn-hover.png');
+            background-size: contain;
+        }
+        @media all and (min-width: 700px) {
+            // 700px dont work?????
+            // width: 400px;
+            // height: 99px;
+        }
     }
     .pre-register {
         padding: 30px 0;
-        width: 50%;
         text-align: center;
-        background: white;
+        background: white; // @media all and (min-width: 700px) {
+        //     width: 50%;
+        // }
         p {
             color: #1d2333;
         }
@@ -187,54 +295,80 @@ a {
         flex-wrap: wrap;
         p {
             color: #1d2333;
-            margin: 0 20px;
-            width: 30%;
+            margin: 0 20px; // width: 30%;
         }
         .prize-text {
             width: 100%;
             justify-content: space-between;
             margin: 0 15px;
+            font-size: 14px;
+            font-family: "Avenir Next", "Avenir", sans-serif;
+        }
+    }
+    .prize-image {
+        padding-left: 4%;
+        img {
+            // width: 100px;
+            // height: 110px;
+            // width: 40%;
+            @media all and (min-width: 700px) {
+                // width: 150px;
+                // height: 150px;
+            }
         }
     }
     .img-text {
-        width: 350px;
+        width: 300px;
     }
-    .div-line img{
-        width: 400px;
+    .div-line img {
+        width: 300px;
+        @media all and (min-width: 700px) {
+            width: 400px;
+        }
     }
     .google-btn02 {
         padding-top: 20px;
         img {
-            width: 250px;
+            width: 220px;
         }
     }
     .bonus {
         padding: 30px 0;
-        width: 50%;
         text-align: center;
         background: rgba(40, 41, 46, .92);
+        @media all and (min-width: 700px) {
+            // width: 50%;
+        }
         p {
             margin: 10px auto;
-            max-width: 400px;
+            padding: 0 10px; // width: 300px;
+            line-height: 24px;
             color: #cecece;
+            @media all and (min-width: 700px) {
+                // width: 400px;
+            }
         }
     }
     .bonus-text {
         justify-content: space-around;
         width: 300px;
         margin: 0 auto;
+        font-family: "Avenir Next", "Avenir", sans-serif;
     }
     .bonus-image img {
         margin: 0 10px;
     }
     .bonus-container {
-        margin: 45px 0;
+        margin: 35px 0;
     }
     .email-box {
         margin: 30px auto;
-        width: 410px;
+        width: 260px;
         background: #dee2ee;
-       
+        @media all and (min-width: 700px) {
+            // 700px dont wokr?
+            // width: 400px;
+        }
         p {
             padding: 20px 0;
             color: #9aa0b1;
@@ -244,14 +378,13 @@ a {
 
 .section2 {
     // max-width: 1100px;
-    padding: 0 10px;
-    height: 100vh;
+    padding: 0 10px; // height: 100vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
     background-size: cover; // @media all and (min-width: 700px) {
     //     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center -8.5rem;
     // }
     @media all and (min-width: 1300px) {
-        height: 119vh;
+        height: 100vh;
     }
     .title {
         margin-top: 63px;
@@ -261,12 +394,12 @@ a {
         text-align: center;
         text-transform: uppercase;
         @media all and (min-width: 400px) {
-            padding-top: 50px;
+            padding-top: 10px;
+            margin-top: 10px;
             font-weight: 100;
-            margin-top: 50px;
         }
         @media all and (min-width: 900px) {
-            padding-top: 0px;
+            // padding-top: 0px;
             font-weight: 100;
             margin-top: 0px;
         }
@@ -301,7 +434,7 @@ a {
         }
         @media all and (min-width: 900px) {
             max-width: 1000px;
-            padding-top: 130px;
+            padding-top: 200px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -319,7 +452,7 @@ a {
     }
     .section2-content-in {
         @media all and (min-width: 800px) {
-            width: 30%;
+            // width: 30%;
         }
     }
     .section2-content-in:nth-child(2) {
@@ -358,7 +491,7 @@ a {
         margin-bottom: 46px;
     }
     @media all and (min-width: 700px) {
-        margin-top: 173px;
+        // margin-top: 173px;
     }
     @media all and (min-width: 1000px) {
         margin-top: 0px;
@@ -366,13 +499,11 @@ a {
 }
 
 .section3 {
-    position: relative;
-    margin-top: 450px;
-    padding-top: 30px;
-    height: 100vh;
+    position: relative; // margin-top: 450px;
+    padding-top: 30px; // height: 100vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .9) 70%);
     @media all and (min-width: 500px) {
-        padding-bottom: 112px;
+        padding-bottom: 30px;
         padding-top: 100px;
         max-width: 1000px;
         margin: 0 auto;
@@ -396,6 +527,8 @@ a {
         opacity: 0.1;
         z-index: 10000;
         cursor: pointer;
+        border-right: 0;
+        border-left: 0;
         &:hover {
             opacity: 1;
         }
@@ -477,12 +610,26 @@ a {
 }
 
 .play-btn-container {
-    width: 98px;
-    height: 98px;
+    width: 50px;
+    height: 50px;
     overflow: hidden;
     position: absolute;
     top: 4%;
     left: 38%;
+    a .play-circle {
+        width: 50px;
+        height: 50px;
+        background-image: url("../img/play-btn.png");
+        background-position: 0 0;
+        background-size: cover;
+        &:hover {
+            background-position: -50px 0;
+        }
+    }
+    @media all and (min-width: 900px) {
+        top: 35%;
+        left: 57%;
+    }
 }
 
 .play-btn-container img:hover {
@@ -515,8 +662,10 @@ a {
 .classes {
     h2 {
         padding-top: 0px;
+        padding-left: 10px;
         @media all and (min-width: 800px) {
             padding-top: 56px;
+            padding-left: 0px;
         }
     }
     h3 {
@@ -553,12 +702,20 @@ a {
     color: #00a8ff;
 }
 
+.section4 {}
+
 .section4,
 .media {
-    // height: 100vh; // I guess this is not needed?
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-media.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
+    // height: 75vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1) 10%), url("../img/bg-media.jpg") repeat center top; // background-size: contain, 11rem 26rem, cover;
     background-size: cover;
-    padding-top: 46px;
+    padding-top: 2px;
+    padding-bottom: 25px;
+    margin-top: 30px;
+    @media all and (min-width: 900px) {
+        // height: 85vh;
+        margin-top: 65px; // margin-bottom: 25px;
+    }
     .media-menu {
         @media all and (min-width: 500px) {
             display: flex;
@@ -603,6 +760,15 @@ a {
         display: flex; // flex-wrap: wrap;
         justify-content: center;
         padding: 20px 0;
+        flex-wrap: wrap;
+        height: 220px;
+        overflow: hidden;
+    }
+    .media-thumb-container-1row,
+    {
+        @media all and (min-width: 400px) {
+            // height: 100vh;
+        }
     }
     .media-thumb img {
         height: 100%;
@@ -623,18 +789,32 @@ a {
     .media-tab li a.active {
         color: white;
     }
+    .play-circle-outer {
+        position: relative;
+        top: -150px;
+        .play-circle {
+            width: 50px;
+            height: 50px;
+            background-image: url("../img/play-btn.png");
+            background-position: 0 0;
+            background-size: cover;
+            margin: -40px auto 0;
+            &:hover {
+                background-position: -50px 0;
+            }
+        }
+    }
 }
 
 footer {
     background-color: white;
-    color: #949494;
-    height: 30vh;
+    color: #949494; // height: 30vh;
     text-align: center;
     justify-content: center;
     padding-top: 50px;
+    display: flex;
     @media all and (min-width: 800px) {
-        display: flex;
-        height: 20vh;
+        height: 20vh; // margin-top: 20px;
     }
     p {
         font-size: 14px;

@@ -11,7 +11,8 @@
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
     <link rel="stylesheet" type=text/css href="sass/css/reset.css">
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
-    <link rel="stylesheet" href="vendor/lightbox/lightbox.min.css">
+    <link rel="stylesheet" href="vendor/featherlight/featherlight.css">
+    <link rel="stylesheet" type=text/css href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.css">
     <link rel="stylesheet" type=text/css href="sass/style.css">
     <link rel="stylesheet" type=text/css href="sass/menu.css">
     <link rel="stylesheet" type=text/css href="sass/topbtn.css">
@@ -44,6 +45,11 @@
                         Intro
                     </li>
                 </a>
+                <a href="#class">
+                    <li class="menu-list">
+                        Classes
+                    </li>
+                </a>
                 <a href="#media">
                     <li>
 
@@ -53,23 +59,26 @@
                 </a>
 
                 <li class="menu-sns">
+
                     <a href="https://www.facebook.com/FellowMMORPG/">
-                        <img src="img/facebook.png">
+                        <div class="icon icon-facebook"></div>
                     </a>
+
+
                     <a href="https://twitter.com/FellowMMORPG">
-                        <img src="img/twitter.png">
+                        <div class="icon icon-twitter"></div>
                     </a>
 
                     <a href="https://www.instagram.com/Fellow_MMORPG/">
-                        <img src="img/discord.png">
+                        <div class="icon icon-instagram"></div>
                     </a>
 
                     <a href="https://www.youtube.com/channel/UCLC7A9pzcvli2682V6kEAwA">
-                        <img src="img/youtube.png">
+                        <div class="icon icon-youtube"></div>
                     </a>
 
                     <a href="https://discord.gg/znghgfb">
-                        <img src="img/discord.png">
+                        <div class="icon icon-discord"></div>
                     </a>
 
                 </li>
@@ -95,35 +104,32 @@
                     Intro
                 </li>
             </a>
+            <a href="#class">
+                <li class="menu-list">
+                    Classes
+                </li>
+            </a>
             <a href="#media">
                 <li class="menu-list">
                     Media
                 </li>
             </a>
-
             <li class="menu-sns">
-
                 <a href="https://www.facebook.com/FellowMMORPG/">
-                    <img src="img/facebook.png">
+                    <div class="icon icon-facebook"></div>
                 </a>
-
-
                 <a href="https://twitter.com/FellowMMORPG">
-                    <img src="img/twitter.png">
+                    <div class="icon icon-twitter"></div>
                 </a>
-
                 <a href="https://www.instagram.com/Fellow_MMORPG/">
-                    <img src="img/instagram.png">
+                    <div class="icon icon-instagram"></div>
                 </a>
-
                 <a href="https://www.youtube.com/channel/UCLC7A9pzcvli2682V6kEAwA">
-                    <img src="img/youtube.png">
+                    <div class="icon icon-youtube"></div>
                 </a>
-
                 <a href="https://discord.gg/znghgfb">
-                    <img src="img/discord.png">
+                    <div class="icon icon-discord"></div>
                 </a>
-
             </li>
         </ul>
     </nav>
@@ -131,84 +137,122 @@
 
 
     <section class="container">
+        <video autoplay muted loop class="main-vid">
+            <source src="video/fellow-teaser-topbanner02-merge.mp4" type="video/mp4">
+        </video>
+
         <div class="section1 main-banner" id="main">
+
             <div class="section1-content">
                 <div class="logo">
                     <img src="img/fellow-logo.png" alt="fellow-logo">
                 </div>
 
                 <div class="top-play-btn">
-                    <img src="img/top-play-btn.png" alt="play-btn">
+                    <a href="#_" data-featherlight="<iframe width='560' height='315' src='https://www.youtube.com/embed/0YqI1lN5m4U?autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>">
+                        <img src="img/top-play-btn.png" alt="play-btn">
+                    </a>
                 </div>
 
                 <div class="top-banner-btn">
-                    <div class="pre-register-btn">
+                    <a href="#pre-register" class="pre-register-btn">
                         <img src="img/button03.png" data-main="img/button03.png" data-hover="img/button03-hover.png" alt="button">
-                    </div>
+                    </a>
                     <div class="google-btn">
                         <img src="img/google-btn-coming.png" alt="button">
                     </div>
                 </div>
-
-            </div>
-            <div class="mouse-ani">
-                <a href="#intro">
-                    <img src="img/mouse.png" alt="mouse-scroll">
-                </a>
+                <div class="mouse-ani">
+                    <a href="#pre-register">
+                        <img src="img/mouse.png" alt="mouse-scroll">
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="pre-register-container">
+        <div class="pre-register-container" id="pre-register">
+
             <div class="pre-regiter-header">
                 <h2>Pre-Registration</h2>
                 <p>Pre-register now to receive special prizes when the game launches!</p>
             </div>
             <div class="container">
-                <div class="pre-register">
-                    <img src="img/pre-regi-text.png" alt="" class="img-text"> 
-                    <p>5th of Jan, 2018~Before Launch date
-                        </p>
-                    <div class="prize-container">
-                        <div class="prize-image">
-                            <img src="img/prize01.png" alt="">
-                            <img src="img/prize02.png" alt="">
-                            <img src="img/prize03.png" alt="">
-                        </div>
+                <div class="grid-x">
+                    <div class="cell small-12 medium-6">
+                        <div class="pre-register">
+                            <img src="img/pre-regi-text.png" alt="" class="img-text">
+                            <p class="sub-text">5th of Jan, 2018~Before Launch date
+                            </p>
+                            <div class="prize-container">
+                                <div class="prize-image">
+                                    <div class="grid-x">
+                                        <div class="cell small-4">
+                                            <img src="img/prize01.png" alt="">
+                                        </div>
+                                        <div class="cell small-4">
+                                            <img src="img/prize02.png" alt="">
+                                        </div>
+                                        <div class="cell small-4">
+                                            <img src="img/prize03.png" alt="">
+                                        </div>
 
-                        <div class="prize-text">
-                            <p>S-Grade Weapon Box</p>
-                            <p>S-Grade Armor Box</p>
-                            <p>Blue Diamond x500</p>
+                                    </div>
+                                </div>
+
+                                <div class="prize-text">
+                                    <div class="grid-x">
+                                        <div class="cell small-4">
+                                            <p>Blue Diamond x500</p>
+                                        </div>
+                                        <div class="cell small-4">
+                                            <p>S-Grade Armor Box</p>
+                                        </div>
+                                        <div class="cell small-4">
+                                            <p>S-Grade Weapon Box</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="email-box">
+                                <p>Enter your email address</p>
+                            </div>
+                            <div class="pre-register-btn02">
+                                <!-- <img src="img/pre-regi-btn-default.png" alt=""> -->
+                            </div>
                         </div>
                     </div>
-                    <div class="email-box"><p>Enter your email address</p></div>
-                    <div>
-                        <img src="img/pre-regi-btn-default.png" alt="">
-                    </div>
-                </div>
-                <div class="bonus">
-                    <img src="img/bonus-prize-text.png" alt="" class="img-text">
-                    <p>Pre-register on Google Play to receive the Bonus Package! You will also get a notification when the game
-                        launches.
-                    </p>
-                    <div class="bonus-container">
-                        <div class="bonus-image">
-                            <img src="img/bonus-icon02.png" alt="">
-                            <img src="img/bonus-icon01.png" alt="">
+                    <div class="cell small-12 medium-6">
+                        <div class="bonus">
+
+
+                            <img src="img/bonus-prize-text.png" alt="" class="img-text">
+                            <p class="sub-text">Pre-register on Google Play to receive the Bonus Package! You will also get a notification when
+                                the game launches.
+                            </p>
+                            <div class="bonus-container">
+                                <div class="bonus-image">
+                                    <img src="img/bonus-icon02.png" alt="">
+                                    <img src="img/bonus-icon03.png" alt="">
+                                </div>
+                                <div class="bonus-text">
+                                    <p>I’eld x1000</p>
+                                    <p>EXP Potion x5</p>
+                                </div>
+                            </div>
+                            <div class="div-line">
+                                <img src="img/line.png" alt="">
+                            </div>
+                            <div class="google-btn google-btn02">
+                                <img src="img/google-btn-coming.png" alt="button">
+                            </div>
                         </div>
-                        <div class="bonus-text">
-                            <p>I’eld x1000</p>
-                            <p>EXP Potion x5</p>
-                        </div>
                     </div>
-                    <div class="div-line"><img src="img/line.png" alt=""></div>
-                    <div class="google-btn google-btn02">
-                        <img src="img/google-btn-coming.png" alt="button">
-                    </div>
+
                 </div>
             </div>
-        </div>
+            <!-- cont -->
 
+        </div>
 
 
         <div class="section2 story" id="intro">
@@ -219,26 +263,33 @@
                 </p>
             </div>
             <div class="section2-content">
-                <div class="section2-content-in section2-left">
-                    <h3>Iron Eagle</h3>
-                    <p>The Iron Eagle is founded by Crown Prince Lukia Dios. It represents the royalty of Dios, a symbol of
-                        a lone stalker in the skies. </p>
-                    <p>Choose the Iron Eagles to support Lukia's rightful ascension to the throne and endure the eternal clash
-                        guided by their wisdom and insight.</p>
-                </div>
-                <div class="section2-content-in section2-right">
-                    <h3>
-                        Tempest Wolf</h3>
-                    <p>The Tempest Wolf is founded by Prince Lloyd Dios. It represents the nobility of Dios, a symbol of a pack
-                        hunter in the woods.</p>
+                <div class="grid-x">
+                    <div class="cell small-12 medium-4">
+                        <div class="section2-content-in section2-left">
+                            <h3>Iron Eagle</h3>
+                            <p>The Iron Eagle is founded by Crown Prince Lukia Dios. It represents the royalty of Dios, a symbol
+                                of a lone stalker in the skies. </p>
+                            <p>Choose the Iron Eagles to support Lukia's rightful ascension to the throne and endure the eternal
+                                clash guided by their wisdom and insight.</p>
+                        </div>
+                    </div>
+                    <div class="cell medium-4"></div>
+                    <div class="cell small-12 medium-4">
+                        <div class="section2-content-in section2-right">
+                            <h3>
+                                Tempest Wolf</h3>
+                            <p>The Tempest Wolf is founded by Prince Lloyd Dios. It represents the nobility of Dios, a symbol
+                                of a pack hunter in the woods.</p>
 
-                    <p>Choose the Tempest Wolves to support Lloyd's revolution to overtake the throne and besiege an eternal
-                        clash led by their vigor and valor.</p>
+                            <p>Choose the Tempest Wolves to support Lloyd's revolution to overtake the throne and besiege an
+                                eternal clash led by their vigor and valor.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="pre-section3 idx-mage">
+        <div class="pre-section3 idx-mage" id="class">
             <div class="section3 classes">
                 <div>
                     <h2>Classes</h2>
@@ -252,7 +303,9 @@
                 <div class="class-content">
                     <div class="character character-mage" data-name="mage">
                         <div class="play-btn-container">
-                            <img src="img/play-btn.png">
+                            <a href="#_" data-featherlight="<iframe width='560' height='315' src='https://www.youtube.com/embed/fyzgGj426Jw?autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>">
+                                <div class="play-circle">&nbsp;</div>
+                            </a>
                         </div>
                         <div class="desc">
                             <h3>Mage</h3>
@@ -280,7 +333,9 @@
                     </div>
                     <div class="character character-warrior" data-name="warrior">
                         <div class="play-btn-container">
-                            <img src="img/play-btn.png">
+                            <a href="#_" data-featherlight="<iframe width='560' height='315' src='https://www.youtube.com/embed/fyzgGj426Jw?autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>">
+                                <div class="play-circle">&nbsp;</div>
+                            </a>
                         </div>
                         <div class="desc">
 
@@ -310,7 +365,9 @@
                     <div class="character character-rogue" data-name="rogue">
 
                         <div class="play-btn-container">
-                            <img src="img/play-btn.png">
+                            <a href="#_" data-featherlight="<iframe width='560' height='315' src='https://www.youtube.com/embed/fyzgGj426Jw?autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>">
+                                <div class="play-circle">&nbsp;</div>
+                            </a>
                         </div>
                         <div class="desc">
                             <h3>Rogue</h3>
@@ -340,7 +397,9 @@
                     </div>
                     <div class="character character-ranger" data-name="ranger">
                         <div class="play-btn-container">
-                            <img src="img/play-btn.png">
+                            <a href="#_" data-featherlight="<iframe width='560' height='315' src='https://www.youtube.com/embed/fyzgGj426Jw?autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>">
+                                <div class="play-circle">&nbsp;</div>
+                            </a>
                         </div>
                         <div class="desc">
                             <h3>
@@ -398,35 +457,35 @@
             <div class="media-thumb-container" data-section="all">
                 <!-- <div>all</div> -->
                 <div class="media-thumb-container-1row">
-                    <div class="media-thumb">
-                        <a href="img/media/artwork/artwork.jpg" data-lightbox="fellow_shot01" data-title="">
+                    <div class="media-thumb hide-for-small-only">
+                        <a href="img/media/artwork/artwork.png" data-featherlight="image">
                             <img src="img/media/artwork/artwork-thumb.jpg">
                         </a>
                     </div>
                     <div class="media-thumb">
-                        <a href="img/media/screenshots/fellow_shot02.png" data-lightbox="fellow_shot02" data-title="">
+                        <a href="img/media/screenshots/fellow_shot02.png" data-featherlight="image">
                             <img src="img/media/screenshots/fellow_shot02-thumb.png">
                         </a>
                     </div>
-                    <div class="media-thumb">
-                        <a href="img/media/screenshots/fellow_shot03.png" data-lightbox="fellow_shot03" data-title="">
+                    <div class="media-thumb hide-for-small-only">
+                        <a href="img/media/screenshots/fellow_shot03.png" data-featherlight="image">
                             <img src="img/media/screenshots/fellow_shot03-thumb.png">
                         </a>
                     </div>
                 </div>
-                <div class="media-thumb-container-2row">
+                <div class="media-thumb-container-2row  hide-for-small-only">
                     <div class="media-thumb">
-                        <a href="img/media/screenshots/fellow_shot04.png" data-lightbox="fellow_shot04" data-title="">
+                        <a href="img/media/screenshots/fellow_shot04.png" data-featherlight="image">
                             <img src="img/media/screenshots/fellow_shot04-thumb.png">
                         </a>
                     </div>
                     <div class="media-thumb">
-                        <a href="img/media/screenshots/fellow_shot06.png" data-lightbox="fellow_shot06" data-title="">
+                        <a href="img/media/screenshots/fellow_shot06.png" data-featherlight="image">
                             <img src="img/media/screenshots/fellow_shot06-thumb.png">
                         </a>
                     </div>
                     <div class="media-thumb">
-                        <a href="img/media/screenshots/fellow_shot08.png" data-lightbox="fellow_shot08" data-title="">
+                        <a href="img/media/screenshots/fellow_shot08.png" data-featherlight="image">
                             <img src="img/media/screenshots/fellow_shot08-thumb.png">
                         </a>
                     </div>
@@ -436,56 +495,56 @@
                 <!-- videos -->
                 <div class="media-thumb-container-1row">
                     <div class="media-thumb">
-                        <img src="img/thumb01.jpg">
+                        <a href="#_" data-featherlight="<iframe width='560' height='315' src='https://www.youtube.com/embed/0YqI1lN5m4U?autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>">
+                            <img src="img/thumb01.jpg">
+                            <div class="play-circle-outer">
+                                <div class="play-circle"></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="media-thumb">
-                        <img src="img/thumb01.jpg">
-                    </div>
-                    <div class="media-thumb">
-                        <img src="img/thumb01.jpg">
+                    <div class="media-thumb hide-for-small-only">
+                        <a href="#_" data-featherlight="<iframe width='560' height='315' src='https://www.youtube.com/embed/fyzgGj426Jw?autoplay=1' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>">
+                            <img src="img/thumb01.jpg">
+                            <div class="play-circle-outer">
+                                <div class="play-circle"></div>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="media-thumb-container-2row">
-                    <div class="media-thumb">
-                        <img src="img/thumb01.jpg">
-                    </div>
-                    <div class="media-thumb">
-                        <img src="img/thumb01.jpg">
-                    </div>
-                </div>
+
             </div>
             <div class="media-thumb-container hide" data-section="screenshots">
                 <!-- screenshots -->
                 <div class="media-thumb-container-1row">
-                    <div class="media-thumb">
-                        <a href="img/media/screenshots/fellow_shot01.png" data-lightbox="fellow_shot01" data-title="">
+                    <div class="media-thumb hide-for-small-only">
+                        <a href="img/media/screenshots/fellow_shot01.png" data-featherlight="image">
                             <img src="img/media/screenshots/fellow_shot01-thumb.png">
                         </a>
                     </div>
                     <div class="media-thumb">
-                        <a href="img/media/screenshots/fellow_shot02.png" data-lightbox="fellow_shot02" data-title="">
+                        <a href="img/media/screenshots/fellow_shot02.png" data-featherlight="image">
                             <img src="img/media/screenshots/fellow_shot02-thumb.png">
                         </a>
                     </div>
-                    <div class="media-thumb">
-                        <a href="img/media/screenshots/fellow_shot03.png" data-lightbox="fellow_shot03" data-title="">
+                    <div class="media-thumb hide-for-small-only">
+                        <a href="img/media/screenshots/fellow_shot03.png" data-featherlight="image">
                             <img src="img/media/screenshots/fellow_shot03-thumb.png">
                         </a>
                     </div>
                 </div>
-                <div class="media-thumb-container-2row">
+                <div class="media-thumb-container-2row  hide-for-small-only">
                     <div class="media-thumb">
-                        <a href="img/media/screenshots/fellow_shot04.png" data-lightbox="fellow_shot04" data-title="">
+                        <a href="img/media/screenshots/fellow_shot04.png" data-featherlight="image">
                             <img src="img/media/screenshots/fellow_shot04-thumb.png">
                         </a>
                     </div>
                     <div class="media-thumb">
-                        <a href="img/media/screenshots/fellow_shot06.png" data-lightbox="fellow_shot06" data-title="">
+                        <a href="img/media/screenshots/fellow_shot06.png" data-featherlight="image">
                             <img src="img/media/screenshots/fellow_shot06-thumb.png">
                         </a>
                     </div>
                     <div class="media-thumb">
-                        <a href="img/media/screenshots/fellow_shot08.png" data-lightbox="fellow_shot08" data-title="">
+                        <a href="img/media/screenshots/fellow_shot08.png" data-featherlight="image">
                             <img src="img/media/screenshots/fellow_shot08-thumb.png">
                         </a>
                     </div>
@@ -495,7 +554,7 @@
                 <!-- artworks -->
                 <div class="media-thumb-container-1row">
                     <div class="media-thumb">
-                        <a href="img/media/artwork/artwork.jpg" data-lightbox="fellow_shot01" data-title="">
+                        <a href="img/media/artwork/artwork.png" data-featherlight="image">
                             <img src="img/media/artwork/artwork-thumb.jpg">
                         </a>
                     </div>
@@ -521,7 +580,7 @@
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/flickity.pkgd.min.js"></script>
     <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
-    <script type="text/javascript" src="vendor/lightbox/lightbox.min.js"></script>
+    <script type="text/javascript" src="vendor/featherlight/featherlight.js"></script>
     <script src="js/main.js"></script>
 
 </body>
