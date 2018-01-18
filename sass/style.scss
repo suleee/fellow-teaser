@@ -101,10 +101,11 @@ a {
 .main-vid {
     visibility: hidden;
     height: 756px;
+    width: 100%;
     @media all and (min-width:700px) {
         position: relative;
         visibility: visible;
-        width: 160%;
+        width: 161%;
         height: 100%;
         left:-25%;
     }
@@ -181,7 +182,7 @@ a {
     //     animation-duration: 2s;
     //     animation-name: slidedown;
     // }
-    .top-banner-btn {
+    .top-banner-btn { 
         text-align: center;
         padding-top: 80px;
         @media all and (min-width: 500px) {

@@ -76,7 +76,8 @@ a {
 
 .main-vid {
   visibility: hidden;
-  height: 756px; }
+  height: 756px;
+  width: 100%; }
   @media all and (min-width: 700px) {
     .main-vid {
       position: relative;
