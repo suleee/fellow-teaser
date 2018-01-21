@@ -105,29 +105,32 @@ a {
     @media all and (min-width:700px) {
         position: relative;
         visibility: visible;
-        width: 161%;
-        height: 100%;
-        left:-25%;
+        height: 553px
+        // width: 161%;
+        // height: 100%;
+        // left:-25%;
     }
     @media all and (min-width:750px) {
-        width: 150%;
-        height: 100%;
-        left:-25%;
+        // width: 150%;
+        // height: 100%;
+        // left:-25%;
     }
-    @media all and (min-width:800px) {
-        width: 140%;
-        height: 100%;
-        left:-25%;
-    }
-    @media all and (min-width: 900px) {
-        width: 130%;
-        height: 120%;
-        left: 0;
-    }
+    // @media all and (min-width:800px) {
+    //     width: 140%;
+    //     height: 100%;
+    //     left:-25%;
+    // }
+    // @media all and (min-width: 900px) {
+    //     width: 130%;
+    //     height: 120%;
+    //     left: 0;
+    // }
     @media all and (min-width: 1000px) {
-        width: 1400px;
-        height: 120%;
-        left: 0;
+        // width: 1400px;
+        // height: 120%;
+        width: 100%;
+        height: 120vh;
+        // left: 0;
     }
 }
 
@@ -146,6 +149,7 @@ a {
     }
     @media all and (min-width: 900px) {
         background-size: cover; // height: 100vh;
+        padding-top: 100px;
     }
     width: 100%; // height: 100%;
     display: flex;
@@ -159,6 +163,10 @@ a {
             -webkit-transition: all 0.5s linear;
             -o-transition: all 0.5s linear;
             transition: all 0.5s linear;
+            @media all and (min-width: 700px) {
+                padding-top: 50px;
+                width: 100px;
+            }
             &:hover {
                 -webkit-filter: drop-shadow(0px 0px 8px rgba(209, 225, 226, 0.9));
             }
@@ -166,11 +174,17 @@ a {
     }
     .logo {
         text-align: center;
+        @media all and (min-width: 700px) {
+            margin-top: 67px;
+        }
         img {
             width: 250PX;
             margin-top: 30px;
             @media all and (min-width: 500px) {
                 width: 350PX;
+            }
+            @media all and (min-width: 700px) {
+                width: 250PX;
             }
         }
     }
@@ -190,6 +204,9 @@ a {
             margin: 0 auto;
             justify-content: center;
         }
+        @media all and (min-width: 700px) {
+            padding-top: 30px;
+        }
         .pre-register-btn {
             padding-top: 28px;
         }
@@ -197,6 +214,8 @@ a {
         .google-btn img {
             width: 250px;
             margin: 0 20px;
+            @media all and (min-width: 700px) {
+            width: 200px;}
         }
         .pre-register-btn img {
             &:hover {
@@ -378,20 +397,22 @@ a {
 }
 
 .section2 {
-    // max-width: 1100px;
+    // background-size: 356%;
     padding: 0 10px; // height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
-    background-size: cover; // @media all and (min-width: 700px) {
-    //     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center -8.5rem;
-    // }
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center top; 
+    background-size: 224% 50%;
+    @media all and (min-width: 500px) {
+        background-size: cover;
+    }
     @media all and (min-width: 1300px) {
         height: 100vh;
+     
     }
     .title {
         margin-top: 63px;
         font-family: 'Cormorant', serif;
         font-weight: 300;
-        padding-top: 40px;
+        // padding-top: 40px;
         text-align: center;
         text-transform: uppercase;
         @media all and (min-width: 400px) {
@@ -426,16 +447,18 @@ a {
     }
     .section2-content {
         min-width: 280px;
-        padding-top: 422px;
+        // padding-top: 422px;
+        padding-top: 200px; 
         @media all and (min-width: 400px) {
             padding-top: 454px;
         }
         @media all and (min-width: 700px) {
-            padding-top: 300px;
+            // padding-top: 300px;
+            padding: 20px;
         }
         @media all and (min-width: 900px) {
             max-width: 1000px;
-            padding-top: 200px;
+            padding: 100px 0 150px 0;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -539,6 +562,7 @@ a {
     }
     .arrow-right {
         left: 80%;
+        opacity: 0.6;
         @media all and (min-width: 500px) {
             left: 80%;
         }
@@ -615,7 +639,7 @@ a {
     height: 50px;
     overflow: hidden;
     position: absolute;
-    top: 4%;
+    top: 12%;
     left: 38%;
     a .play-circle {
         width: 50px;
@@ -642,7 +666,8 @@ a {
 }
 
 .media-menu {
-    padding: 0 10px;
+    padding: 0 25px;
+    padding-top: 50px;
 }
 
 .media-menu h2,
@@ -812,23 +837,42 @@ footer {
     color: #949494; // height: 30vh;
     text-align: center;
     justify-content: center;
-    padding-top: 50px;
-    display: flex;
-    @media all and (min-width: 800px) {
-        height: 20vh; // margin-top: 20px;
+    padding-top: 40px;
+    @media all and (min-width: 700px) {
+        height: 20vh; 
+        display: flex;
+    }
+    .footer-logo-container{
+        display: flex;
+        justify-content: center;
+        // margin-bottom: 20px;
+        @media all and (min-width: 700px) {
+        max-width: 263px;}
+        .goboogie-con{
+            width: 50%;
+        }  
+        .nj-con{
+            width: 41%;
+        }     
     }
     p {
         font-size: 14px;
-        padding: 0 20px;
+        padding: 20px;
+        @media all and (min-width: 700px) {
+            text-align: left;
+            padding: 0 20px 0 10px;
+        }
     }
-    .g-logo {
-        width: 120px;
-        padding-right: 20px;
+    .g-logo, .nj-logo  {
+        width: 100%;
     }
-    .nj-logo {
-        width: 100px;
-        padding-left: 20px;
+    .g-logo{
+        padding: 0 20px 0 10px;
     }
+    .nj-logo{
+        padding: 0 10px 0 20px;
+    }
+  
 } // Key frames for animation
 @keyframes wiggle {
     0% {
@@ -851,4 +895,30 @@ footer {
         margin-bottom: 0%;
         width: 100%;
     }
+}
+
+
+.class-content:focus, .slick-list:focus, .slick-track:focus, a:focus, .section3:focus{
+    outline:0 !important;
+}
+
+// Responsive youtube video
+.video-container {
+    width: 90vw;
+    @media all and (min-width: 600px) {
+        width: 600px;
+    }
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
 }

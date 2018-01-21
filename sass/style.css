@@ -82,29 +82,11 @@ a {
     .main-vid {
       position: relative;
       visibility: visible;
-      width: 160%;
-      height: 100%;
-      left: -25%; } }
-  @media all and (min-width: 750px) {
-    .main-vid {
-      width: 150%;
-      height: 100%;
-      left: -25%; } }
-  @media all and (min-width: 800px) {
-    .main-vid {
-      width: 140%;
-      height: 100%;
-      left: -25%; } }
-  @media all and (min-width: 900px) {
-    .main-vid {
-      width: 130%;
-      height: 120%;
-      left: 0; } }
+      height: 553px; } }
   @media all and (min-width: 1000px) {
     .main-vid {
-      width: 1400px;
-      height: 120%;
-      left: 0; } }
+      width: 100%;
+      height: 120vh; } }
 
 .section1 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%), url("../img/main-banner.jpg") no-repeat center top;
@@ -123,7 +105,8 @@ a {
       margin-top: 0px; } }
   @media all and (min-width: 900px) {
     .section1 {
-      background-size: cover; } }
+      background-size: cover;
+      padding-top: 100px; } }
   .section1 .top-play-btn {
     text-align: center; }
     .section1 .top-play-btn img {
@@ -132,16 +115,26 @@ a {
       -webkit-transition: all 0.5s linear;
       -o-transition: all 0.5s linear;
       transition: all 0.5s linear; }
+      @media all and (min-width: 700px) {
+        .section1 .top-play-btn img {
+          padding-top: 50px;
+          width: 100px; } }
       .section1 .top-play-btn img:hover {
         -webkit-filter: drop-shadow(0px 0px 8px rgba(209, 225, 226, 0.9)); }
   .section1 .logo {
     text-align: center; }
+    @media all and (min-width: 700px) {
+      .section1 .logo {
+        margin-top: 67px; } }
     .section1 .logo img {
       width: 250PX;
       margin-top: 30px; }
       @media all and (min-width: 500px) {
         .section1 .logo img {
           width: 350PX; } }
+      @media all and (min-width: 700px) {
+        .section1 .logo img {
+          width: 250PX; } }
   .section1 .section1-content {
     margin: 0 auto;
     max-width: 1100px; }
@@ -153,12 +146,19 @@ a {
         display: flex;
         margin: 0 auto;
         justify-content: center; } }
+    @media all and (min-width: 700px) {
+      .section1 .top-banner-btn {
+        padding-top: 30px; } }
     .section1 .top-banner-btn .pre-register-btn {
       padding-top: 28px; }
     .section1 .top-banner-btn .pre-register-btn img,
     .section1 .top-banner-btn .google-btn img {
       width: 250px;
       margin: 0 20px; }
+      @media all and (min-width: 700px) {
+        .section1 .top-banner-btn .pre-register-btn img,
+        .section1 .top-banner-btn .google-btn img {
+          width: 200px; } }
     .section1 .top-banner-btn .pre-register-btn img:hover {
       cursor: pointer; }
     .section1 .top-banner-btn .google-btn {
@@ -281,7 +281,10 @@ a {
 .section2 {
   padding: 0 10px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center top;
-  background-size: cover; }
+  background-size: 224% 50%; }
+  @media all and (min-width: 500px) {
+    .section2 {
+      background-size: cover; } }
   @media all and (min-width: 1300px) {
     .section2 {
       height: 100vh; } }
@@ -289,7 +292,6 @@ a {
     margin-top: 63px;
     font-family: 'Cormorant', serif;
     font-weight: 300;
-    padding-top: 40px;
     text-align: center;
     text-transform: uppercase; }
     @media all and (min-width: 400px) {
@@ -319,17 +321,17 @@ a {
           font-size: 35px; } }
   .section2 .section2-content {
     min-width: 280px;
-    padding-top: 422px; }
+    padding-top: 200px; }
     @media all and (min-width: 400px) {
       .section2 .section2-content {
         padding-top: 454px; } }
     @media all and (min-width: 700px) {
       .section2 .section2-content {
-        padding-top: 300px; } }
+        padding: 20px; } }
     @media all and (min-width: 900px) {
       .section2 .section2-content {
         max-width: 1000px;
-        padding-top: 200px;
+        padding: 100px 0 150px 0;
         margin: 0 auto;
         display: flex;
         justify-content: space-between; } }
@@ -403,7 +405,8 @@ a {
     .section3 .arrow-right img {
       padding-top: 40vh; }
   .section3 .arrow-right {
-    left: 80%; }
+    left: 80%;
+    opacity: 0.6; }
     @media all and (min-width: 500px) {
       .section3 .arrow-right {
         left: 80%; } }
@@ -463,7 +466,7 @@ a {
   height: 50px;
   overflow: hidden;
   position: absolute;
-  top: 4%;
+  top: 12%;
   left: 38%; }
   .play-btn-container a .play-circle {
     width: 50px;
@@ -485,7 +488,8 @@ a {
   display: flex; }
 
 .media-menu {
-  padding: 0 10px; }
+  padding: 0 25px;
+  padding-top: 50px; }
 
 .media-menu h2,
 .classes h2 {
@@ -631,20 +635,34 @@ footer {
   color: #949494;
   text-align: center;
   justify-content: center;
-  padding-top: 50px;
-  display: flex; }
-  @media all and (min-width: 800px) {
+  padding-top: 40px; }
+  @media all and (min-width: 700px) {
     footer {
-      height: 20vh; } }
+      height: 20vh;
+      display: flex; } }
+  footer .footer-logo-container {
+    display: flex;
+    justify-content: center; }
+    @media all and (min-width: 700px) {
+      footer .footer-logo-container {
+        max-width: 263px; } }
+    footer .footer-logo-container .goboogie-con {
+      width: 50%; }
+    footer .footer-logo-container .nj-con {
+      width: 41%; }
   footer p {
     font-size: 14px;
-    padding: 0 20px; }
+    padding: 20px; }
+    @media all and (min-width: 700px) {
+      footer p {
+        text-align: left;
+        padding: 0 20px 0 10px; } }
+  footer .g-logo, footer .nj-logo {
+    width: 100%; }
   footer .g-logo {
-    width: 120px;
-    padding-right: 20px; }
+    padding: 0 20px 0 10px; }
   footer .nj-logo {
-    width: 100px;
-    padding-left: 20px; }
+    padding: 0 10px 0 20px; }
 
 @keyframes wiggle {
   0% {
@@ -660,5 +678,25 @@ footer {
   to {
     margin-bottom: 0%;
     width: 100%; } }
+.class-content:focus, .slick-list:focus, .slick-track:focus, a:focus, .section3:focus {
+  outline: 0 !important; }
+
+.video-container {
+  width: 90vw;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+  @media all and (min-width: 600px) {
+    .video-container {
+      width: 600px; } }
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
