@@ -440,6 +440,7 @@ a {
             color: white;
             font-size: 24px;
             letter-spacing: 2px;
+            line-height: 24px;
             @media all and (min-width: 500px) {
                 font-size: 35px;
             }
@@ -448,7 +449,7 @@ a {
     .section2-content {
         min-width: 280px;
         // padding-top: 422px;
-        padding-top: 200px; 
+        padding-top: 230px; 
         @media all and (min-width: 400px) {
             padding-top: 454px;
         }
@@ -525,7 +526,7 @@ a {
 .section3 {
     position: relative; // margin-top: 450px;
     padding-top: 30px; // height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .9) 70%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .3) 100%);
     @media all and (min-width: 500px) {
         padding-bottom: 30px;
         padding-top: 100px;
@@ -571,7 +572,7 @@ a {
         }
     }
     .desc {
-        padding: 0 10px;
+        padding: 0 20px;
         margin-top: 150px;
         @media all and (min-width: 700px) {
             margin-left: 0px;
@@ -666,7 +667,7 @@ a {
 }
 
 .media-menu {
-    padding: 0 25px;
+    padding: 0 20px;
     padding-top: 50px;
 }
 
@@ -688,10 +689,10 @@ a {
 .classes {
     h2 {
         padding-top: 0px;
-        padding-left: 10px;
+        padding-left: 20px;
         @media all and (min-width: 800px) {
             padding-top: 56px;
-            padding-left: 0px;
+           
         }
     }
     h3 {
@@ -773,38 +774,34 @@ a {
             }
         }
     }
-    .media-thumb-container-2row {
-        visibility: hidden;
-        height: 0;
-        @media all and (min-width: 500px) {
-            visibility: visible;
-            height: 300px;
-        }
+    // .media-thumb-container-2row {
+    //     visibility: hidden;
+    //     height: 0;
+    //     @media all and (min-width: 500px) {
+    //         visibility: visible;
+    //         height: 300px;
+    //     }
+    // }
+
+   
+   .cell{
+    padding: 10px 10px;
+    @media all and (min-width: 700px) {
+        padding: 0 10px; 
     }
-    .media-thumb-container-1row,
-    .media-thumb-container-2row {
-        display: flex; // flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px 0;
-        flex-wrap: wrap;
-        height: 220px;
-        overflow: hidden;
-    }
-    .media-thumb-container-1row,
-    {
-        @media all and (min-width: 400px) {
-            // height: 100vh;
-        }
-    }
+   }
     .media-thumb img {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
     .media-thumb {
+        // width: 300px;
+        @media all and (min-width: 700px) {
         background-color: white;
-        width: 350px;
-        height: 260px;
+        // width: 350px;
+        // height: 260px;
+    }
     }
     .media-thumb:nth-child(2) {
         margin: 0 10px;
@@ -858,6 +855,7 @@ footer {
     p {
         font-size: 14px;
         padding: 20px;
+        margin: 0 !important;
         @media all and (min-width: 700px) {
             text-align: left;
             padding: 0 20px 0 10px;

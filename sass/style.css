@@ -315,13 +315,14 @@ a {
     .section2 .title span {
       color: white;
       font-size: 24px;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      line-height: 24px; }
       @media all and (min-width: 500px) {
         .section2 .title span {
           font-size: 35px; } }
   .section2 .section2-content {
     min-width: 280px;
-    padding-top: 200px; }
+    padding-top: 230px; }
     @media all and (min-width: 400px) {
       .section2 .section2-content {
         padding-top: 454px; } }
@@ -374,7 +375,7 @@ a {
 .section3 {
   position: relative;
   padding-top: 30px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 70%); }
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%); }
   @media all and (min-width: 500px) {
     .section3 {
       padding-bottom: 30px;
@@ -414,7 +415,7 @@ a {
       .section3 .arrow-right {
         left: 85%; } }
   .section3 .desc {
-    padding: 0 10px;
+    padding: 0 20px;
     margin-top: 150px; }
     @media all and (min-width: 700px) {
       .section3 .desc {
@@ -488,7 +489,7 @@ a {
   display: flex; }
 
 .media-menu {
-  padding: 0 25px;
+  padding: 0 20px;
   padding-top: 50px; }
 
 .media-menu h2,
@@ -501,11 +502,10 @@ a {
 
 .classes h2 {
   padding-top: 0px;
-  padding-left: 10px; }
+  padding-left: 20px; }
   @media all and (min-width: 800px) {
     .classes h2 {
-      padding-top: 56px;
-      padding-left: 0px; } }
+      padding-top: 56px; } }
 .classes h3 {
   font-size: 50px;
   margin-bottom: 0px;
@@ -576,35 +576,22 @@ a {
       .section4 .media-tab li:hover span,
       .media .media-tab li:hover span {
         color: #5c6673; }
-  .section4 .media-thumb-container-2row,
-  .media .media-thumb-container-2row {
-    visibility: hidden;
-    height: 0; }
-    @media all and (min-width: 500px) {
-      .section4 .media-thumb-container-2row,
-      .media .media-thumb-container-2row {
-        visibility: visible;
-        height: 300px; } }
-  .section4 .media-thumb-container-1row,
-  .section4 .media-thumb-container-2row,
-  .media .media-thumb-container-1row,
-  .media .media-thumb-container-2row {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    flex-wrap: wrap;
-    height: 220px;
-    overflow: hidden; }
+  .section4 .cell,
+  .media .cell {
+    padding: 10px 10px; }
+    @media all and (min-width: 700px) {
+      .section4 .cell,
+      .media .cell {
+        padding: 0 10px; } }
   .section4 .media-thumb img,
   .media .media-thumb img {
     height: 100%;
     width: 100%;
     object-fit: cover; }
-  .section4 .media-thumb,
-  .media .media-thumb {
-    background-color: white;
-    width: 350px;
-    height: 260px; }
+  @media all and (min-width: 700px) {
+    .section4 .media-thumb,
+    .media .media-thumb {
+      background-color: white; } }
   .section4 .media-thumb:nth-child(2),
   .media .media-thumb:nth-child(2) {
     margin: 0 10px; }
@@ -652,7 +639,8 @@ footer {
       width: 41%; }
   footer p {
     font-size: 14px;
-    padding: 20px; }
+    padding: 20px;
+    margin: 0 !important; }
     @media all and (min-width: 700px) {
       footer p {
         text-align: left;
