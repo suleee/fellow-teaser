@@ -102,43 +102,23 @@ a {
     visibility: hidden;
     height: 756px;
     width: 100%;
-    @media all and (min-width:700px) {
+    @media all and (min-width: 700px) {
         position: relative;
         visibility: visible;
-        height: 553px
-        // width: 161%;
-        // height: 100%;
-        // left:-25%;
+        height: 553px;
     }
     @media all and (min-width:750px) {
-        // width: 150%;
-        // height: 100%;
-        // left:-25%;
-    }
-    // @media all and (min-width:800px) {
-    //     width: 140%;
-    //     height: 100%;
-    //     left:-25%;
-    // }
-    // @media all and (min-width: 900px) {
-    //     width: 130%;
-    //     height: 120%;
-    //     left: 0;
-    // }
+    
+    } 
     @media all and (min-width: 1000px) {
-        // width: 1400px;
-        // height: 120%;
         width: 100%;
-        height: 120vh;
-        // left: 0;
+        height: 80vh; 
     }
 }
 
 .section1 {
-    // padding-top: 100px;
-    // height: 100vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%), url("../img/main-banner.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
-    background-size: cover;
+    background-size: contain, 51rem 28rem;
     margin-top: 78px;
     position: absolute;
     top: 0;
@@ -159,7 +139,7 @@ a {
         text-align: center;
         img {
             padding-top: 50px;
-            -webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
+            -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.80));
             -webkit-transition: all 0.5s linear;
             -o-transition: all 0.5s linear;
             transition: all 0.5s linear;
@@ -175,7 +155,7 @@ a {
     .logo {
         text-align: center;
         @media all and (min-width: 700px) {
-            margin-top: 67px;
+            // margin-top: 67px;
         }
         img {
             width: 250PX;
@@ -184,7 +164,12 @@ a {
                 width: 350PX;
             }
             @media all and (min-width: 700px) {
-                width: 250PX;
+                width: 269PX;
+                margin-top: 89px;
+            }
+            @media all and (min-width: 900px) {
+                width: 350PX;
+                margin-top: 30px;
             }
         }
     }
@@ -196,7 +181,7 @@ a {
     //     animation-duration: 2s;
     //     animation-name: slidedown;
     // }
-    .top-banner-btn { 
+    .top-banner-btn {
         text-align: center;
         padding-top: 80px;
         @media all and (min-width: 500px) {
@@ -214,8 +199,9 @@ a {
         .google-btn img {
             width: 250px;
             margin: 0 20px;
-            @media all and (min-width: 700px) {
-            width: 200px;}
+            // @media all and (min-width: 700px) {
+            //     width: 200px;
+            // }
         }
         .pre-register-btn img {
             &:hover {
@@ -399,20 +385,18 @@ a {
 .section2 {
     // background-size: 356%;
     padding: 0 10px; // height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center top; 
-    background-size: 224% 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center top;
+    background-size: 215% 50%;
     @media all and (min-width: 500px) {
         background-size: cover;
     }
     @media all and (min-width: 1300px) {
         height: 100vh;
-     
     }
     .title {
         margin-top: 63px;
         font-family: 'Cormorant', serif;
-        font-weight: 300;
-        // padding-top: 40px;
+        font-weight: 300; // padding-top: 40px;
         text-align: center;
         text-transform: uppercase;
         @media all and (min-width: 400px) {
@@ -447,9 +431,8 @@ a {
         }
     }
     .section2-content {
-        min-width: 280px;
-        // padding-top: 422px;
-        padding-top: 230px; 
+        min-width: 280px; // padding-top: 422px;
+        padding-top: 230px;
         @media all and (min-width: 400px) {
             padding-top: 454px;
         }
@@ -526,7 +509,7 @@ a {
 .section3 {
     position: relative; // margin-top: 450px;
     padding-top: 30px; // height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .3) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .95) 100%);
     @media all and (min-width: 500px) {
         padding-bottom: 30px;
         padding-top: 100px;
@@ -692,7 +675,6 @@ a {
         padding-left: 20px;
         @media all and (min-width: 800px) {
             padding-top: 56px;
-           
         }
     }
     h3 {
@@ -774,22 +756,12 @@ a {
             }
         }
     }
-    // .media-thumb-container-2row {
-    //     visibility: hidden;
-    //     height: 0;
-    //     @media all and (min-width: 500px) {
-    //         visibility: visible;
-    //         height: 300px;
-    //     }
-    // }
-
-   
-   .cell{
-    padding: 10px 10px;
-    @media all and (min-width: 700px) {
-        padding: 0 10px; 
+    .cell {
+        padding: 10px 10px;
+        @media all and (min-width: 700px) {
+            padding: 0 10px;
+        }
     }
-   }
     .media-thumb img {
         height: 100%;
         width: 100%;
@@ -798,10 +770,9 @@ a {
     .media-thumb {
         // width: 300px;
         @media all and (min-width: 700px) {
-        background-color: white;
-        // width: 350px;
-        // height: 260px;
-    }
+            background-color: white; // width: 350px;
+            // height: 260px;
+        }
     }
     .media-thumb:nth-child(2) {
         margin: 0 10px;
@@ -829,6 +800,21 @@ a {
     }
 }
 
+.media-thumb-container {
+    @media all and (min-width: 900px) {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .grid-x {
+        text-align: center;
+    }
+    .grid-x:first-child {
+        @media all and (min-width: 700px) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
 footer {
     background-color: white;
     color: #949494; // height: 30vh;
@@ -836,21 +822,21 @@ footer {
     justify-content: center;
     padding-top: 40px;
     @media all and (min-width: 700px) {
-        height: 20vh; 
+        height: 20vh;
         display: flex;
     }
-    .footer-logo-container{
+    .footer-logo-container {
         display: flex;
-        justify-content: center;
-        // margin-bottom: 20px;
+        justify-content: center; // margin-bottom: 20px;
         @media all and (min-width: 700px) {
-        max-width: 263px;}
-        .goboogie-con{
+            max-width: 263px;
+        }
+        .goboogie-con {
             width: 50%;
-        }  
-        .nj-con{
+        }
+        .nj-con {
             width: 41%;
-        }     
+        }
     }
     p {
         font-size: 14px;
@@ -861,16 +847,16 @@ footer {
             padding: 0 20px 0 10px;
         }
     }
-    .g-logo, .nj-logo  {
+    .g-logo,
+    .nj-logo {
         width: 100%;
     }
-    .g-logo{
+    .g-logo {
         padding: 0 20px 0 10px;
     }
-    .nj-logo{
+    .nj-logo {
         padding: 0 10px 0 20px;
     }
-  
 } // Key frames for animation
 @keyframes wiggle {
     0% {
@@ -895,9 +881,12 @@ footer {
     }
 }
 
-
-.class-content:focus, .slick-list:focus, .slick-track:focus, a:focus, .section3:focus{
-    outline:0 !important;
+.class-content:focus,
+.slick-list:focus,
+.slick-track:focus,
+a:focus,
+.section3:focus {
+    outline: 0 !important;
 }
 
 // Responsive youtube video
@@ -906,17 +895,19 @@ footer {
     @media all and (min-width: 600px) {
         width: 600px;
     }
-	position:relative;
-	padding-bottom:56.25%;
-	padding-top:30px;
-	height:0;
-	overflow:hidden;
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
 }
 
-.video-container iframe, .video-container object, .video-container embed {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

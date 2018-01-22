@@ -86,11 +86,11 @@ a {
   @media all and (min-width: 1000px) {
     .main-vid {
       width: 100%;
-      height: 120vh; } }
+      height: 80vh; } }
 
 .section1 {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%), url("../img/main-banner.jpg") no-repeat center top;
-  background-size: cover;
+  background-size: contain, 51rem 28rem;
   margin-top: 78px;
   position: absolute;
   top: 0;
@@ -123,9 +123,6 @@ a {
         -webkit-filter: drop-shadow(0px 0px 8px rgba(209, 225, 226, 0.9)); }
   .section1 .logo {
     text-align: center; }
-    @media all and (min-width: 700px) {
-      .section1 .logo {
-        margin-top: 67px; } }
     .section1 .logo img {
       width: 250PX;
       margin-top: 30px; }
@@ -134,7 +131,12 @@ a {
           width: 350PX; } }
       @media all and (min-width: 700px) {
         .section1 .logo img {
-          width: 250PX; } }
+          width: 269PX;
+          margin-top: 89px; } }
+      @media all and (min-width: 900px) {
+        .section1 .logo img {
+          width: 350PX;
+          margin-top: 30px; } }
   .section1 .section1-content {
     margin: 0 auto;
     max-width: 1100px; }
@@ -155,10 +157,6 @@ a {
     .section1 .top-banner-btn .google-btn img {
       width: 250px;
       margin: 0 20px; }
-      @media all and (min-width: 700px) {
-        .section1 .top-banner-btn .pre-register-btn img,
-        .section1 .top-banner-btn .google-btn img {
-          width: 200px; } }
     .section1 .top-banner-btn .pre-register-btn img:hover {
       cursor: pointer; }
     .section1 .top-banner-btn .google-btn {
@@ -281,7 +279,7 @@ a {
 .section2 {
   padding: 0 10px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center top;
-  background-size: 224% 50%; }
+  background-size: 215% 50%; }
   @media all and (min-width: 500px) {
     .section2 {
       background-size: cover; } }
@@ -375,7 +373,7 @@ a {
 .section3 {
   position: relative;
   padding-top: 30px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%); }
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%); }
   @media all and (min-width: 500px) {
     .section3 {
       padding-bottom: 30px;
@@ -617,6 +615,16 @@ a {
       .media .play-circle-outer .play-circle:hover {
         background-position: -50px 0; }
 
+@media all and (min-width: 900px) {
+  .media-thumb-container {
+    max-width: 1200px;
+    margin: 0 auto; } }
+.media-thumb-container .grid-x {
+  text-align: center; }
+@media all and (min-width: 700px) {
+  .media-thumb-container .grid-x:first-child {
+    margin-bottom: 20px; } }
+
 footer {
   background-color: white;
   color: #949494;
@@ -645,7 +653,8 @@ footer {
       footer p {
         text-align: left;
         padding: 0 20px 0 10px; } }
-  footer .g-logo, footer .nj-logo {
+  footer .g-logo,
+  footer .nj-logo {
     width: 100%; }
   footer .g-logo {
     padding: 0 20px 0 10px; }
@@ -666,7 +675,11 @@ footer {
   to {
     margin-bottom: 0%;
     width: 100%; } }
-.class-content:focus, .slick-list:focus, .slick-track:focus, a:focus, .section3:focus {
+.class-content:focus,
+.slick-list:focus,
+.slick-track:focus,
+a:focus,
+.section3:focus {
   outline: 0 !important; }
 
 .video-container {
@@ -680,7 +693,9 @@ footer {
     .video-container {
       width: 600px; } }
 
-.video-container iframe, .video-container object, .video-container embed {
+.video-container iframe,
+.video-container object,
+.video-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -688,3 +703,4 @@ footer {
   height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
+
