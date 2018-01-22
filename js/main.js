@@ -147,3 +147,19 @@ $(document).ready(function () {
 		popupOpenClose($(".popup"));
 	});
 });
+
+// Email
+$(document).ready(function(){
+  $('#email-send').on('click', function() {
+    var $mail = $('#email').val();
+    var $content = $('#email-thankyou');
+    $.ajax({
+      method: "POST",
+      url: "mail.php",
+      data: { mail: $mail }
+    })
+    .done(function( msg ) {
+      $.featherlight($content);
+    });
+  })
+});
