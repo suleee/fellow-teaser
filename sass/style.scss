@@ -225,7 +225,7 @@ a {
     background-size: cover;
     font-family: 'Cormorant', serif;
     @media all and (min-width: 700px) {
-        margin-bottom: 55px; // height: 100vh;
+        padding-bottom: 55px; // height: 100vh;
     }
     .sub-text {
         font-size: 18px;
@@ -340,6 +340,7 @@ a {
         text-align: center;
         background: rgba(40, 41, 46, .92);
         @media all and (min-width: 700px) {
+            padding: 22px 0;
             // width: 50%;
         }
         p {

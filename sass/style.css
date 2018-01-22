@@ -175,7 +175,7 @@ a {
   font-family: 'Cormorant', serif; }
   @media all and (min-width: 700px) {
     .pre-register-container {
-      margin-bottom: 55px; } }
+      padding-bottom: 55px; } }
   .pre-register-container .sub-text {
     font-size: 18px; }
   .pre-register-container .pre-regiter-header {
@@ -254,6 +254,9 @@ a {
     padding: 30px 0;
     text-align: center;
     background: rgba(40, 41, 46, 0.92); }
+    @media all and (min-width: 700px) {
+      .pre-register-container .bonus {
+        padding: 22px 0; } }
     .pre-register-container .bonus p {
       margin: 10px auto;
       padding: 0 10px;
