@@ -155,7 +155,7 @@ $(document).ready(function(){
     var $content = $('#email-thankyou');
     $.ajax({
       method: "POST",
-      url: "mail.php",
+      url: "send.php",
       data: { mail: $mail }
     })
     .done(function( msg ) {
