@@ -117,7 +117,7 @@ a {
       transition: all 0.5s linear; }
       @media all and (min-width: 700px) {
         .section1 .top-play-btn img {
-          padding-top: 50px;
+          padding-top: 20px;
           width: 100px; } }
       .section1 .top-play-btn img:hover {
         -webkit-filter: drop-shadow(0px 0px 8px rgba(209, 225, 226, 0.9)); }
@@ -135,8 +135,8 @@ a {
           margin-top: 89px; } }
       @media all and (min-width: 900px) {
         .section1 .logo img {
-          width: 350PX;
-          margin-top: 30px; } }
+          width: 260PX;
+          margin-top: 0px; } }
   .section1 .section1-content {
     margin: 0 auto;
     max-width: 1100px; }

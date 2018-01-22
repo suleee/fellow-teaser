@@ -142,7 +142,7 @@ a {
             -o-transition: all 0.5s linear;
             transition: all 0.5s linear;
             @media all and (min-width: 700px) {
-                padding-top: 50px;
+                padding-top: 20px;
                 width: 100px;
             }
             &:hover {
@@ -166,8 +166,8 @@ a {
                 margin-top: 89px;
             }
             @media all and (min-width: 900px) {
-                width: 350PX;
-                margin-top: 30px;
+                width: 260PX;
+                margin-top: 0px;
             }
         }
     }
