@@ -89,7 +89,7 @@ a {
       height: 80vh; } }
 
 .section1 {
-  background: linear-gradient(to bottom, transparent 0%, transparent 0%), url("../img/main-banner.jpg") no-repeat center top;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%), url("../img/main-banner.jpg") no-repeat center top;
   background-size: contain, 51rem 28rem;
   margin-top: 78px;
   position: absolute;
@@ -170,7 +170,7 @@ a {
 
 .pre-register-container {
   margin-bottom: 25px;
-  background: linear-gradient(to bottom, transparent 0%, transparent 100%), url("../img/bg-register.jpg") no-repeat center top;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-register.jpg") no-repeat center top;
   background-size: cover;
   font-family: 'Cormorant', serif; }
   @media all and (min-width: 700px) {
@@ -281,7 +281,7 @@ a {
 
 .section2 {
   padding: 0 10px;
-  background: linear-gradient(to bottom, transparent 0%, transparent 100%), url("../img/bg2.jpg") no-repeat center top;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center top;
   background-size: 215% 50%; }
   @media all and (min-width: 500px) {
     .section2 {
@@ -369,7 +369,6 @@ a {
 @media all and (min-width: 400px) {
   .pre-section3 {
     margin-bottom: 46px; } }
-
 @media all and (min-width: 1000px) {
   .pre-section3 {
     margin-top: 0px; } }
@@ -377,7 +376,7 @@ a {
 .section3 {
   position: relative;
   padding-top: 30px;
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.95) 100%); }
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%); }
   @media all and (min-width: 500px) {
     .section3 {
       padding-bottom: 30px;
@@ -387,7 +386,7 @@ a {
   @media all and (min-width: 600px) {
     .section3 {
       padding-top: 90px;
-      background: linear-gradient(to bottom, transparent 0%, transparent 0%); } }
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%); } }
   .section3 ul {
     list-style: none;
     display: flex; }
@@ -508,7 +507,6 @@ a {
   @media all and (min-width: 800px) {
     .classes h2 {
       padding-top: 56px; } }
-
 .classes h3 {
   font-size: 50px;
   margin-bottom: 0px;
@@ -518,13 +516,11 @@ a {
   @media all and (min-width: 500px) {
     .classes h3 {
       font-size: 60px; } }
-
 .classes h4 {
   font-size: 24px;
   font-weight: 300;
   margin: 0 0 25px 0;
   font-family: 'Cormorant', serif; }
-
 .classes p {
   font-size: 14px;
   line-height: 20px; }
@@ -626,10 +622,8 @@ a {
   .media-thumb-container {
     max-width: 1200px;
     margin: 0 auto; } }
-
 .media-thumb-container .grid-x {
   text-align: center; }
-
 @media all and (min-width: 700px) {
   .media-thumb-container .grid-x:first-child {
     margin-bottom: 20px; } }
@@ -677,7 +671,6 @@ footer {
     -webkit-transform: translate(0, -5px); }
   100% {
     -webkit-transform: translate(0, 5px); } }
-
 @keyframes slidedown {
   from {
     margin-top: -50%;
@@ -685,7 +678,6 @@ footer {
   to {
     margin-bottom: 0%;
     width: 100%; } }
-
 .class-content:focus,
 .slick-list:focus,
 .slick-track:focus,
@@ -713,31 +705,32 @@ a:focus,
   width: 100%;
   height: 100%; }
 
-.padding-top-20 {
-  padding-top: 20px; }
-
-#email-thankyou.featherlight-inner {
-  width: 100%;
-  height: 350px;
-  padding: 30px; }
-  #email-thankyou.featherlight-inner .thankyou-logo {
+.featherlight-content {
+  width: 90%;
+  height: 350px; }
+  @media all and (min-width: 600px) {
+    .featherlight-content {
+      width: 50%; } }
+  .featherlight-content .thankyou-logo {
     text-align: center;
     margin: 20px 0 20px 0; }
-  #email-thankyou.featherlight-inner .bar {
+  .featherlight-content .bar {
     width: 162px;
     height: 3px;
     background: #7f7f7f;
     margin: 20px auto; }
-  #email-thankyou.featherlight-inner h2 {
+  .featherlight-content h2 {
     color: #1a1a1a;
     font-weight: 500;
     font-size: 24px;
     text-transform: uppercase;
     text-align: center; }
-  #email-thankyou.featherlight-inner p {
+  .featherlight-content p {
     color: #7f7f7f;
     font-size: 18px;
     font-weight: 300;
     text-align: center; }
-  #email-thankyou.featherlight-inner span {
+  .featherlight-content span {
     font-weight: 500; }
+
+/*# sourceMappingURL=style.css.map */
