@@ -152,16 +152,15 @@ $(document).ready(function () {
 $(document).ready(function(){
   $('#email-send').on('click', function() {
     var $content = $('#email-thankyou');
-    $.featherlight($content);
-    // var $mail = $('#email').val();
-    // var $content = $('#email-thankyou');
-    // $.ajax({
-    //   method: "POST",
-    //   url: "mail.php",
-    //   data: { mail: $mail }
-    // })
-    // .done(function( msg ) {
-    //   $.featherlight($content);
-    // });
+    // $.featherlight($content);
+    var $mail = $('#email').val();
+    $.ajax({
+      method: "POST",
+      url: "send.php",
+      data: { mail: $mail }
+    })
+    .done(function( msg ) {
+      $.featherlight($content);
+    });
   })
 });
