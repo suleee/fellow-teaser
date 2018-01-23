@@ -713,26 +713,30 @@ a:focus,
   width: 100%;
   height: 100%; }
 
-#email-thankyou.featherlight-inner {
-  margin: 0 auto; }
-  #email-thankyou.featherlight-inner .thankyou-logo {
+.featherlight.ty-email .featherlight-content {
+  width: 90%;
+  height: 350px; }
+  @media all and (min-width: 600px) {
+    .featherlight.ty-email .featherlight-content {
+      width: 50%; } }
+  .featherlight.ty-email .featherlight-content .thankyou-logo {
     text-align: center;
     margin: 20px 0 20px 0; }
-  #email-thankyou.featherlight-inner .bar {
+  .featherlight.ty-email .featherlight-content .bar {
     width: 162px;
     height: 3px;
     background: #7f7f7f;
     margin: 20px auto; }
-  #email-thankyou.featherlight-inner h2 {
+  .featherlight.ty-email .featherlight-content h2 {
     color: #1a1a1a;
     font-weight: 500;
     font-size: 24px;
     text-transform: uppercase;
     text-align: center; }
-  #email-thankyou.featherlight-inner p {
+  .featherlight.ty-email .featherlight-content p {
     color: #7f7f7f;
     font-size: 18px;
     font-weight: 300;
     text-align: center; }
-  #email-thankyou.featherlight-inner span {
+  .featherlight.ty-email .featherlight-content span {
     font-weight: 500; }

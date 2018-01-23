@@ -160,7 +160,7 @@ $(document).ready(function(){
       data: { mail: $mail }
     })
     .done(function( msg ) {
-      $.featherlight($content);
+      $.featherlight($content, {variant: 'ty-email'});
     });
   })
 });

@@ -27,7 +27,7 @@ $dbname = "emails";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = "SELECT id, email, create_date, ip FROM email";
+$sql = "SELECT id, email, create_date, ip FROM email ORDER BY id DESC";
 $result = $conn->query($sql);
 ?>
 

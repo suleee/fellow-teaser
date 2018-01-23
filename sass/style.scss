@@ -910,12 +910,11 @@ a:focus,
     height: 100%;
 }
 
-#email-thankyou.featherlight-inner {
-    // width: 90%;
-    margin: 0 auto;
-    // height: 350px;
+.featherlight.ty-email .featherlight-content{
+    width: 90%;
+    height: 350px;
     @media all and (min-width: 600px) {
-        // width: 50%;
+        width: 50%;
     }
     .thankyou-logo{
         text-align: center;
