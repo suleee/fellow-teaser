@@ -100,14 +100,14 @@ a {
 
 .main-vid {
     visibility: hidden;
-    height: 756px;
+    height: 720px;
     width: 100%;
     @media all and (min-width: 700px) {
         position: relative;
         visibility: visible;
         height: 553px;
     }
-    @media all and (min-width:750px) {}
+    @media all and (min-width: 750px) {}
     @media all and (min-width: 1000px) {
         width: 100%;
         height: 80vh;
@@ -115,7 +115,7 @@ a {
 }
 
 .section1 {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%), url("../img/main-banner.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%), url("../img/main-banner.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
     background-size: contain, 51rem 28rem;
     margin-top: 78px;
     position: absolute;
@@ -137,13 +137,16 @@ a {
         text-align: center;
         img {
             padding-top: 50px;
-            -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.80));
+            -webkit-filter: drop-shadow(0px 0px 0px rgba(255, 255, 255, 0.8));
             -webkit-transition: all 0.5s linear;
             -o-transition: all 0.5s linear;
             transition: all 0.5s linear;
             @media all and (min-width: 700px) {
-                padding-top: 20px;
-                width: 100px;
+                padding-top: 10px;
+                width: 85px;
+            }
+            @media all and (min-width: 1400px) {
+                padding-top: 72px;
             }
             &:hover {
                 -webkit-filter: drop-shadow(0px 0px 8px rgba(209, 225, 226, 0.9));
@@ -156,17 +159,17 @@ a {
             // margin-top: 67px;
         }
         img {
-            width: 250PX;
+            width: 250px;
             margin-top: 30px;
             @media all and (min-width: 500px) {
-                width: 350PX;
+                width: 350px;
             }
             @media all and (min-width: 700px) {
-                width: 269PX;
+                width: 269px;
                 margin-top: 89px;
             }
             @media all and (min-width: 900px) {
-                width: 260PX;
+                width: 260px;
                 margin-top: 0px;
             }
         }
@@ -174,39 +177,56 @@ a {
     .section1-content {
         margin: 0 auto;
         max-width: 1100px;
-    } // .top-banner-btn,
-    // .logo {
-    //     animation-duration: 2s;
-    //     animation-name: slidedown;
-    // }
-    .top-banner-btn {
-        text-align: center;
-        padding-top: 80px;
-        @media all and (min-width: 500px) {
-            display: flex;
-            margin: 0 auto;
-            justify-content: center;
+    }
+    .apps-container {
+        margin: 10px 0 0 0;
+        p {
+            margin-bottom: 0;
+            text-align: center;
+            text-shadow: 0px 0px 6px black;
+            font-weight: 600;
         }
-        @media all and (min-width: 700px) {
-            padding-top: 30px;
-        }
-        .pre-register-btn {
-            padding-top: 28px;
-        }
-        .pre-register-btn img,
-        .google-btn img {
-            width: 250px;
-            margin: 0 20px; // @media all and (min-width: 700px) {
-            //     width: 200px;
-            // }
-        }
-        .pre-register-btn img {
-            &:hover {
-                cursor: pointer;
+    }
+    .app-btn-container {
+        display: flex;
+        justify-content: center;
+        .google-btn,
+        .apple-btn {
+            // width: 230px;
+            // margin: 0 auto;
+            // margin-bottom: 4px;
+            // @media all and (min-width: 500px) {
+            width: 150px;
+            margin: 0 2.5px;
+            @media all and (min-width: 700px) {
+                width: 110px;
+            }
+            @media all and (min-width: 1400px) {
+                width: 150px;
+            }
+            img {
+                width: 100%;
             }
         }
-        .google-btn {
-            padding-top: 8px;
+    }
+    .top-register-btn-container {
+        width: 250px;
+        margin: 0 auto;
+        margin-top: 50px;
+        @media all and (min-width: 500px) {
+            width: 215px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        @media all and (min-width: 700px) {
+            margin-top: 32px;
+        }
+        @media all and (min-width: 900px) {
+            margin-top: 5px;
+        }
+        @media all and (min-width: 1400px) {
+            width: 300px;
+            margin-top: 40px;
         }
     }
     .mouse-ani {
@@ -221,9 +241,9 @@ a {
 
 .pre-register-container {
     margin-bottom: 25px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-register.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg-register.jpg") no-repeat center top; // background-size: contain, 11rem 26rem, cover;
     background-size: cover;
-    font-family: 'Cormorant', serif;
+    font-family: "Cormorant", serif;
     @media all and (min-width: 700px) {
         padding-bottom: 55px; // height: 100vh;
     }
@@ -255,7 +275,7 @@ a {
     .container {
         max-width: 1000px;
         margin: 0 auto;
-        box-shadow: 1px 4px 11px 2px rgba(0, 0, 0, .2);
+        box-shadow: 1px 4px 11px 2px rgba(0, 0, 0, 0.2);
         @media all and (min-width: 700px) {
             display: flex;
         }
@@ -269,12 +289,12 @@ a {
         width: 260px;
         height: 66px;
         margin: 0 auto;
-        background: url('../img/pre-regi-btn-default.png');
+        background: url("../img/pre-regi-btn-default.png");
         background-size: contain;
         background-repeat: no-repeat;
         &:hover {
             cursor: pointer;
-            background: url('../img/pre-regi-btn-hover.png');
+            background: url("../img/pre-regi-btn-hover.png");
             background-size: contain;
         }
         @media all and (min-width: 700px) {
@@ -336,8 +356,7 @@ a {
         padding: 30px 0;
         text-align: center;
         @media all and (min-width: 700px) {
-            padding: 22px 0;
-            // width: 50%;
+            padding: 22px 0; // width: 50%;
         }
         p {
             margin: 10px auto;
@@ -350,15 +369,29 @@ a {
         }
     }
     .bonus-text {
-        width: 450px;
         margin: 0 auto;
         font-family: "Avenir Next", "Avenir", sans-serif;
-        p{
+        @media all and (min-width: 900px) {
+            width: 450px;
+        }
+        p {
             width: 150px;
         }
     }
-    .bonus-image img {
-        margin: 0 10px;
+    .bonus-image {
+        min-width: 300px;
+        display: flex;
+        justify-content: center;
+        img {
+            @media all and (min-width: 900px) {
+                margin: 0 10px;
+            }
+        }
+    }
+    .cbt-text {
+        font-family: "Avenir Next", "Avenir", sans-serif;
+        color: white; 
+        font-weight: 500;
     }
     .bonus-container {
         margin: 35px 0;
@@ -1292,21 +1325,18 @@ a {
         margin-top: 65px;
         width: 260px;
         background: #dee2ee;
-        @media all and (min-width: 700px) {
-            // 700px dont wokr?
-            // width: 400px;
-        }
+        @media all and (min-width: 700px) {}
         p {
             padding: 20px 0;
-            color: #9aa0b1;
+            color: #9aa0b1; // @media all and (min-width: 700px) {
+            // }
         }
     }
 }
 
 .section2 {
-    // background-size: 356%;
     padding: 0 10px; // height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center top;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../img/bg2.jpg") no-repeat center top;
     background-size: 215% 50%;
     @media all and (min-width: 500px) {
         background-size: cover;
@@ -1316,7 +1346,7 @@ a {
     }
     .title {
         margin-top: 63px;
-        font-family: 'Cormorant', serif;
+        font-family: "Cormorant", serif;
         font-weight: 300; // padding-top: 40px;
         text-align: center;
         text-transform: uppercase;
@@ -1332,7 +1362,7 @@ a {
         }
         p {
             margin: 0;
-            color: #C2AA3C;
+            color: #c2aa3c;
             font-size: 18px;
             @media all and (min-width: 700px) {
                 font-size: 24px;
@@ -1430,7 +1460,7 @@ a {
 .section3 {
     position: relative; // margin-top: 450px;
     padding-top: 30px; // height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .95) 100%);
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%);
     @media all and (min-width: 500px) {
         padding-bottom: 30px;
         padding-top: 100px;
@@ -1439,7 +1469,7 @@ a {
     }
     @media all and (min-width: 600px) {
         padding-top: 90px;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%);
+        background: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%);
     }
     ul {
         list-style: none;
@@ -1563,7 +1593,7 @@ a {
 }
 
 .play-btn-container img:hover {
-    transform: translate3d( -98px, 0px, 0px);
+    transform: translate3d(-98px, 0px, 0px);
 }
 
 .slick-slide {
@@ -1582,7 +1612,7 @@ a {
     // padding-bottom: 15px;
     font-weight: 100;
     text-transform: uppercase;
-    font-family: 'Cormorant', serif;
+    font-family: "Cormorant", serif;
     letter-spacing: 4px;
     font-size: 18px; // color: #C2AA3C;
     // text    // @media all and (min-width: 800px) {
@@ -1603,7 +1633,7 @@ a {
         margin-bottom: 0px;
         margin-top: 0;
         font-style: italic;
-        font-family: 'Cormorant', serif;
+        font-family: "Cormorant", serif;
         @media all and (min-width: 500px) {
             font-size: 60px;
         }
@@ -1612,7 +1642,7 @@ a {
         font-size: 24px;
         font-weight: 300;
         margin: 0 0 25px 0;
-        font-family: 'Cormorant', serif;
+        font-family: "Cormorant", serif;
     }
     p {
         font-size: 14px;
@@ -1637,7 +1667,7 @@ a {
 .section4,
 .media {
     // height: 75vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1) 10%), url("../img/bg-media.jpg") repeat center top; // background-size: contain, 11rem 26rem, cover;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1) 10%), url("../img/bg-media.jpg") repeat center top; // background-size: contain, 11rem 26rem, cover;
     background-size: cover;
     padding-top: 2px;
     padding-bottom: 25px;
@@ -1781,13 +1811,13 @@ footer {
 } // Key frames for animation
 @keyframes wiggle {
     0% {
-        -webkit-transform: translate(0, 5px)
+        -webkit-transform: translate(0, 5px);
     }
     65% {
-        -webkit-transform: translate(0, -5px)
+        -webkit-transform: translate(0, -5px);
     }
     100% {
-        -webkit-transform: translate(0, 5px)
+        -webkit-transform: translate(0, 5px);
     }
 }
 
@@ -1808,19 +1838,17 @@ footer {
 a:focus,
 .section3:focus {
     outline: 0 !important;
-}
-
-// Responsive youtube video
+} // Responsive youtube video
 .video-container {
     width: 90vw;
     @media all and (min-width: 600px) {
         width: 600px;
     }
-    position:relative;
-    padding-bottom:56.25%;
-    padding-top:30px;
-    height:0;
-    overflow:hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
 }
 
 .video-container iframe,
@@ -1839,16 +1867,15 @@ a:focus,
     @media all and (min-width: 600px) {
         width: 50%;
     }
-    .thankyou-logo{
+    .thankyou-logo {
         text-align: center;
         margin: 20px 0 20px 0;
     }
-    .bar{
+    .bar {
         width: 162px;
         height: 3px;
-       background: #7f7f7f;
-       margin: 20px auto;
-
+        background: #7f7f7f;
+        margin: 20px auto;
     }
     h2 {
         color: #1a1a1a;
@@ -1868,11 +1895,11 @@ a:focus,
     }
 }
 
-.white-container{
+.white-container {
     background: white;
 }
 
-.black-container{
+.black-container {
     background: rgba(40, 41, 46, 0.92);
 }
 
