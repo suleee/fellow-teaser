@@ -381,6 +381,7 @@ a {
     .bonus-image {
         min-width: 300px;
         display: flex;
+        justify-content: center;
         img {
             @media all and (min-width: 900px) {
                 margin: 0 10px;
@@ -389,7 +390,7 @@ a {
     }
     .cbt-text {
         font-family: "Avenir Next", "Avenir", sans-serif;
-        color: white;
+        color: white; 
         font-weight: 500;
     }
     .bonus-container {

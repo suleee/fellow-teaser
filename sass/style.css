@@ -296,7 +296,8 @@ a {
       width: 150px; }
   .pre-register-container .bonus-image {
     min-width: 300px;
-    display: flex; }
+    display: flex;
+    justify-content: center; }
     @media all and (min-width: 900px) {
       .pre-register-container .bonus-image img {
         margin: 0 10px; } }
