@@ -272,12 +272,22 @@ a {
   .pre-register-container .bonus-container {
     margin: 35px 0; }
   .pre-register-container .email-box {
-    margin: 30px auto;
+    margin: 30px auto 10px;
     width: 260px;
     background: #dee2ee; }
     .pre-register-container .email-box p {
       padding: 20px 0;
       color: #9aa0b1; }
+    .pre-register-container .email-box input {
+      margin-bottom: 5px; }
+  .pre-register-container .error {
+    color: darkred;
+    font-weight: bold;
+    padding-bottom: 7px; }
+    .pre-register-container .error .wrong {
+      display: none; }
+    .pre-register-container .error .exists {
+      display: none; }
 
 .section2 {
   padding: 0 10px;

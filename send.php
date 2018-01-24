@@ -13,16 +13,22 @@ if (strlen($mail) > 5) {
 	//     die("Connection failed: " . mysqli_connect_error());
 	// }
 
-	
+	$sts = $conn->prepare("SELECT 1 FROM email WHERE email = ?");
+	$sts->bind_param("s", $mail);
+	$sts->execute();
+	$res = $sts->get_results();
+	if($res->num_rows === 0) {
+		$stmt = $conn->prepare("INSERT INTO email (email, ip) VALUES (?, ?)");
+		$stmt->bind_param("ss", $email, $ip);
 
-	$stmt = $conn->prepare("INSERT INTO email (email, ip) VALUES (?, ?)");
-	$stmt->bind_param("ss", $email, $ip);
+		$email = $mail;
+		$ip = $_SERVER['REMOTE_ADDR']?:($_SERVER['HTTP_X_FORWARDED_FOR']?:$_SERVER['HTTP_CLIENT_IP']);
 
-	$email = $mail;
-	$ip = $_SERVER['REMOTE_ADDR']?:($_SERVER['HTTP_X_FORWARDED_FOR']?:$_SERVER['HTTP_CLIENT_IP']);
-
-	$stmt->execute();
-	// printf("Error: %s.\n", $stmt->error);
+		$stmt->execute();
+		// printf("Error: %s.\n", $stmt->error);		
+	} else {
+		echo 'exists';
+	}
 	$stmt->close();
 	$conn->close();
 }

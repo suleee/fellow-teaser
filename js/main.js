@@ -150,17 +150,28 @@ $(document).ready(function () {
 
 // Email
 $(document).ready(function(){
+  var sent = false;
   $('#email-send').on('click', function() {
+    if (sent) return;
     var $content = $('#email-thankyou');
-    // $.featherlight($content);
-    var $mail = $('#email').val();
-    $.ajax({
-      method: "POST",
-      url: "send.php",
-      data: { mail: $mail }
-    })
-    .done(function( msg ) {
-      $.featherlight($content, {variant: 'ty-email'});
-    });
+    var $mail = $('#email').val().trim();
+    if ($mail.length < 6 || $mail.indexOf('@') < 1 || $mail.indexOf('.') < 0) {
+       $('.error .wrong').css('display', 'inline');
+    } else {
+      $.ajax({
+        method: "POST",
+        url: "send.php",
+        data: { mail: $mail }
+      })
+      .done(function( msg ) {
+        if (msg === 'exists') {
+          $('.error .exists').css('display', 'inline');
+        } else {
+          $.featherlight($content, {variant: 'ty-email'});
+          $('#email').attr('disabled', 'disabled');
+          sent = true;
+        }
+      });      
+    }
   })
 });

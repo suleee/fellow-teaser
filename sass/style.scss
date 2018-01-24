@@ -366,7 +366,7 @@ a {
         margin: 35px 0;
     }
     .email-box {
-        margin: 30px auto;
+        margin: 30px auto 10px;
         width: 260px;
         background: #dee2ee;
         @media all and (min-width: 700px) {
@@ -376,6 +376,20 @@ a {
         p {
             padding: 20px 0;
             color: #9aa0b1;
+        }
+        input {
+            margin-bottom: 5px;
+        }
+    }
+    .error {
+        color: darkred;
+        font-weight: bold;
+        padding-bottom: 7px;
+        .wrong {
+            display: none;
+        }
+        .exists {
+            display: none;
         }
     }
 }
