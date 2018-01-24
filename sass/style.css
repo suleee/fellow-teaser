@@ -221,8 +221,7 @@ a {
       background-size: contain; }
   .pre-register-container .pre-register {
     padding: 30px 0;
-    text-align: center;
-    background: white; }
+    text-align: center; }
     .pre-register-container .pre-register p {
       color: #1d2333; }
   .pre-register-container .prize-container {
@@ -252,27 +251,28 @@ a {
       width: 220px; }
   .pre-register-container .bonus {
     padding: 30px 0;
-    text-align: center;
-    background: rgba(40, 41, 46, 0.92); }
+    text-align: center; }
     @media all and (min-width: 700px) {
       .pre-register-container .bonus {
         padding: 22px 0; } }
     .pre-register-container .bonus p {
       margin: 10px auto;
-      padding: 0 10px;
-      line-height: 24px;
+      padding: 0px 20px;
+      line-height: 20px;
       color: #cecece; }
   .pre-register-container .bonus-text {
-    justify-content: space-around;
-    width: 300px;
+    width: 450px;
     margin: 0 auto;
     font-family: "Avenir Next", "Avenir", sans-serif; }
+    .pre-register-container .bonus-text p {
+      width: 150px; }
   .pre-register-container .bonus-image img {
     margin: 0 10px; }
   .pre-register-container .bonus-container {
     margin: 35px 0; }
   .pre-register-container .email-box {
     margin: 30px auto;
+    margin-top: 65px;
     width: 260px;
     background: #dee2ee; }
     .pre-register-container .email-box p {
@@ -405,7 +405,7 @@ a {
       opacity: 1; }
     .section3 .arrow-left img,
     .section3 .arrow-right img {
-      padding-top: 40vh; }
+      padding-top: 30vh; }
   .section3 .arrow-right {
     left: 80%;
     opacity: 0.6; }
@@ -732,5 +732,11 @@ a:focus,
     text-align: center; }
   .featherlight-content span {
     font-weight: 500; }
+
+.white-container {
+  background: white; }
+
+.black-container {
+  background: rgba(40, 41, 46, 0.92); }
 
 /*# sourceMappingURL=style.css.map */

@@ -286,9 +286,6 @@ a {
     .pre-register {
         padding: 30px 0;
         text-align: center;
-        background: white; // @media all and (min-width: 700px) {
-        //     width: 50%;
-        // }
         p {
             color: #1d2333;
         }
@@ -338,15 +335,14 @@ a {
     .bonus {
         padding: 30px 0;
         text-align: center;
-        background: rgba(40, 41, 46, .92);
         @media all and (min-width: 700px) {
             padding: 22px 0;
             // width: 50%;
         }
         p {
             margin: 10px auto;
-            padding: 0 10px; // width: 300px;
-            line-height: 24px;
+            padding: 0px 20px;
+            line-height: 20px;
             color: #cecece;
             @media all and (min-width: 700px) {
                 // width: 400px;
@@ -354,10 +350,12 @@ a {
         }
     }
     .bonus-text {
-        justify-content: space-around;
-        width: 300px;
+        width: 450px;
         margin: 0 auto;
         font-family: "Avenir Next", "Avenir", sans-serif;
+        p{
+            width: 150px;
+        }
     }
     .bonus-image img {
         margin: 0 10px;
@@ -367,6 +365,7 @@ a {
     }
     .email-box {
         margin: 30px auto;
+        margin-top: 65px;
         width: 260px;
         background: #dee2ee;
         @media all and (min-width: 700px) {
@@ -539,7 +538,7 @@ a {
             opacity: 1;
         }
         img {
-            padding-top: 40vh;
+            padding-top: 30vh;
         }
     }
     .arrow-right {
@@ -945,3 +944,10 @@ a:focus,
     }
 }
 
+.white-container{
+    background: white;
+}
+
+.black-container{
+    background: rgba(40, 41, 46, 0.92);
+}
