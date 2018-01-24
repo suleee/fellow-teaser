@@ -300,6 +300,10 @@ a {
     @media all and (min-width: 900px) {
       .pre-register-container .bonus-image img {
         margin: 0 10px; } }
+  .pre-register-container .cbt-text {
+    font-family: "Avenir Next", "Avenir", sans-serif;
+    color: white;
+    font-weight: 500; }
   .pre-register-container .bonus-container {
     margin: 35px 0; }
   .pre-register-container .email-box {
