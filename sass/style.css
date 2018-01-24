@@ -643,6 +643,18 @@ a {
   .media-thumb-container .grid-x:first-child {
     margin-bottom: 20px; } }
 
+.media-thumb-container .play-circle-outerx .play-circlex {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/play-btn.png");
+  background-position: 0 0;
+  background-size: cover;
+  position: relative;
+  top: -150px;
+  margin: 0 auto; }
+  .media-thumb-container .play-circle-outerx .play-circlex:hover {
+    background-position: -50px 0; }
+
 footer {
   background-color: white;
   color: #949494;
@@ -1470,3 +1482,17 @@ a:focus,
 
 .black-container {
   background: rgba(40, 41, 46, 0.92); }
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.Aligner-item {
+  max-width: 50%; }
+
+.Aligner-item--top {
+  align-self: flex-start; }
+
+.Aligner-item--bottom {
+  align-self: flex-end; }
