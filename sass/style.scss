@@ -690,8 +690,8 @@ a {
 .media-menu {
     padding: 0 20px;
     padding-top: 50px;
-    @media all and (min-width: 1200px) {
-        padding: 0;
+    @media all and (min-width: 1160px) {
+        padding: 0 10px;
         padding-top: 50px;
     }
 }
@@ -771,12 +771,12 @@ a {
         @media all and (min-width: 500px) {
             display: flex;
             justify-content: space-between;
-            max-width: 1110px;
+            max-width: 990px;
             margin: 0 auto;
         }
-        @media all and (min-width: 1200px) {
-            max-width: 1138px;
-        }
+        // @media all and (min-width: 1160px) {
+        //     max-width: 1138px;
+        // }
     }
     .media-tab {
         list-style: none;
@@ -847,7 +847,7 @@ a {
 
 .media-thumb-container {
     @media all and (min-width: 900px) {
-        max-width: 1200px;
+        max-width: 990px;
         margin: 0 auto;
     }
     .grid-x {

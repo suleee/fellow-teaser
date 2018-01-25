@@ -537,9 +537,9 @@ a {
 .media-menu {
   padding: 0 20px;
   padding-top: 50px; }
-  @media all and (min-width: 1200px) {
+  @media all and (min-width: 1160px) {
     .media-menu {
-      padding: 0;
+      padding: 0 10px;
       padding-top: 50px; } }
 
 .media-menu h2,
@@ -600,12 +600,8 @@ a {
     .media .media-menu {
       display: flex;
       justify-content: space-between;
-      max-width: 1110px;
+      max-width: 990px;
       margin: 0 auto; } }
-  @media all and (min-width: 1200px) {
-    .section4 .media-menu,
-    .media .media-menu {
-      max-width: 1138px; } }
   .section4 .media-tab,
   .media .media-tab {
     list-style: none;
@@ -673,7 +669,7 @@ a {
 
 @media all and (min-width: 900px) {
   .media-thumb-container {
-    max-width: 1200px;
+    max-width: 990px;
     margin: 0 auto; } }
 .media-thumb-container .grid-x {
   text-align: center; }
