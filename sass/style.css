@@ -537,6 +537,10 @@ a {
 .media-menu {
   padding: 0 20px;
   padding-top: 50px; }
+  @media all and (min-width: 1200px) {
+    .media-menu {
+      padding: 0;
+      padding-top: 50px; } }
 
 .media-menu h2,
 .classes h2 {
@@ -596,8 +600,12 @@ a {
     .media .media-menu {
       display: flex;
       justify-content: space-between;
-      max-width: 1100px;
+      max-width: 1110px;
       margin: 0 auto; } }
+  @media all and (min-width: 1200px) {
+    .section4 .media-menu,
+    .media .media-menu {
+      max-width: 1138px; } }
   .section4 .media-tab,
   .media .media-tab {
     list-style: none;
