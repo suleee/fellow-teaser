@@ -6,7 +6,7 @@ body {
 }
 
 a {
-    color: #4c4c4c;
+    color: rgba(225, 225, 225, 0.733);
     font-weight: 500;
     &:hover {
         color: white;
@@ -142,11 +142,11 @@ a {
             -o-transition: all 0.5s linear;
             transition: all 0.5s linear;
             @media all and (min-width: 700px) {
-                padding-top: 10px;
+                padding-top: 50px;
                 width: 85px;
             }
             @media all and (min-width: 1400px) {
-                padding-top: 72px;
+                padding-top: 60px;
             }
             &:hover {
                 -webkit-filter: drop-shadow(0px 0px 8px rgba(209, 225, 226, 0.9));
@@ -179,7 +179,7 @@ a {
         max-width: 1100px;
     }
     .apps-container {
-        margin: 10px 0 0 0;
+        margin: 25px 0 0 0;
         p {
             margin-bottom: 0;
             text-align: center;
@@ -192,15 +192,8 @@ a {
         justify-content: center;
         .google-btn,
         .apple-btn {
-            // width: 230px;
-            // margin: 0 auto;
-            // margin-bottom: 4px;
-            // @media all and (min-width: 500px) {
             width: 150px;
             margin: 0 2.5px;
-            @media all and (min-width: 700px) {
-                width: 110px;
-            }
             @media all and (min-width: 1400px) {
                 width: 150px;
             }
@@ -211,10 +204,11 @@ a {
     }
     .top-register-btn-container {
         width: 250px;
+        text-align: center;
         margin: 0 auto;
         margin-top: 50px;
         @media all and (min-width: 500px) {
-            width: 215px;
+            // width: 215px;
             margin: 0 auto;
             margin-top: 10px;
         }
@@ -222,11 +216,23 @@ a {
             margin-top: 32px;
         }
         @media all and (min-width: 900px) {
-            margin-top: 5px;
+            margin-top: 25px;
         }
         @media all and (min-width: 1400px) {
             width: 300px;
-            margin-top: 40px;
+            margin-top: 30px;
+        }
+        p {
+            color: white;
+            padding-top: 5px;
+            text-shadow: 0px 0px 5px #000000, 0px 0px 5px #000000;
+        }
+        img {
+            // @media all and (min-width: 500px) {
+            width: 200px;
+        }
+        img:hover {
+            filter: brightness(0.7);
         }
     }
     .mouse-ani {
@@ -296,11 +302,6 @@ a {
             cursor: pointer;
             background: url("../img/pre-regi-btn-hover.png");
             background-size: contain;
-        }
-        @media all and (min-width: 700px) {
-            // 700px dont work?????
-            // width: 400px;
-            // height: 99px;
         }
     }
     .pre-register {
@@ -390,7 +391,7 @@ a {
     }
     .cbt-text {
         font-family: "Avenir Next", "Avenir", sans-serif;
-        color: white; 
+        color: white;
         font-weight: 500;
     }
     .bonus-container {
@@ -773,8 +774,7 @@ a {
             justify-content: space-between;
             max-width: 990px;
             margin: 0 auto;
-        }
-        // @media all and (min-width: 1160px) {
+        } // @media all and (min-width: 1160px) {
         //     max-width: 1138px;
         // }
     }
@@ -866,8 +866,7 @@ a {
             height: 50px;
             background-image: url("../img/play-btn.png");
             background-position: 0 0;
-            background-size: cover;
-            // margin: -40% auto 0;
+            background-size: cover; // margin: -40% auto 0;
             position: relative;
             top: -150px;
             margin: 0 auto;
